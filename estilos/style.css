@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+
+}
+#tela{
+    background-color: rgb(255, 0, 0);
+    width:600px;
+    height: 500px;
+    border-radius: 10px;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+.invisivel{
+    display: none;
+}
+form{
+    margin: 10px;
+}
+input, label{
+    margin: 5px;
+    margin-top: 5px;
+}

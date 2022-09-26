@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imbuiments</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Imbuiments</h1>
+        </section>
+        <div id="tela">
+            <form id="formulario-geral" >
+                <div>
+                    <label for="item">Equipamento: </label>
+                    <input type="text" name="item" placeholder="escolha o equipamento" list="faixa" id="i-item">
+                        <datalist id="faixa">
+                            <option value="Espada"></option>
+                            <option value="Clava"></option>
+                            <option value="Axe"></option>
+                            <option value="Cajado"></option>
+                            <option value="Arco/Besta"></option>
+                            <option value="Capacete"></option>
+                            <option value="Bota"></option>
+                            <option value="Armadura"></option>
+                            <option value="Escudo"></option>
+                            <option value="Backpack"></option>
+                        </datalist>
+                    <span id="input-slots">
+                        <label for="slot">Slot:</label>
+                        <input type="text" name="slot" id="i-slot" list="slots" placeholder="Selecione os slots">
+                            <datalist id="slots">
+                                <option value="1 Slot"></option>
+                                <option value="2 Slots"></option>
+                                <option value="3 Slots"></option>
+                            </datalist>
+                    </span>
+                    <br>
+                    <span id="imbui-melee" class="invisivel">
+                        <label for="melee">Imbuiment de arma melee:</label>
+                        <input type="text" name="melee" id="i-melee" list="melees">
+                        <datalist id="melees">
+                            <option value="Life Leech"></option>
+                            <option value="Mana Leech"></option>
+                            <option value="Critical Hit"></option>
+                            <option value="Skill Melee"></option>
+                        </datalist>
+                    </span>
+                    <span id="imbui-cajado" class="invisivel">
+                        <label for="cajado">Imbuiment de Cajados:</label>
+                        <input type="text" name="cajado" id="i-cajado" list="cajados">
+                        <datalist id="cajados">
+                            <option value="Mana Leech"></option>
+                            <option value="Skill Ml"></option>
+                            <option value="Critical Hit"></option>
+                        </datalist>
+                    </span>
+                    <span id="imbui-distancia" class="invisivel">
+                        <label for="distancia">Imbuiment de arma distancia:</label>
+                        <input type="text" name="distancia" id="i-distancia" list="distancias">
+                        <datalist id="distancias">
+                            <option value="Life Leech"></option>
+                            <option value="Mana Leech"></option>
+                            <option value="Critical Hit"></option>
+                            <option value="Skill Distance"></option>
+                        </datalist>
+                    </span>
+                    <span id="imbui-capacete" class="invisivel">
+                        <label for="capacete">Imbuiments Capatece:</label>
+                        <input type="text" name="capacete" id="i-capacete" list="capacetes">
+                        <datalist id="capacetes">
+                            <option value="Mana Leech"></option>
+                            <option value="Skill Melee"></option>
+                            <option value="Skill Ml"></option>
+                            <option value="Skill Distance"></option>
+                            <option value="Skill Shielding"></option>
+                        </datalist>
+                    </span>
+                    <span id="imbui-bota" class="invisivel">
+                        <label for="bota">Imbuiments Bota:</label>
+                        <input type="text" name="bota" id="i-bota" list="botas">
+                        <datalist id="botas">
+                            <option value="Remoção de Paralise"></option>
+                        </datalist>
+                    </span>
+                    <span id="imbui-armadura" class="invisivel">
+                        <label for="armadura">Imbuiments Armadura</label>
+                        <input type="text" name="armadura" id="i-armadura" list="armaduras">
+                        <datalist id="armaduras">
+                            <option value="Life Leech"></option>
+                            <option value="Proteção a Death"></option>
+                            <option value="Proteção a Earth"></option>
+                            <option value="Proteção a Fire"></option>
+                            <option value="Proteção a Ice"></option>
+                            <option value="Proteção a Energy"></option>
+                            <option value="Proteção a Holy"></option>
+                        </datalist>
+                    </span>
+                    <span id="imbui-escudo" class="invisivel">
+                        <label for="escudo">Imbuiments Armadura</label>
+                        <input type="text" name="escudo" id="i-escudo" list="escudos">
+                        <datalist id="escudos">
+                            <option value="Skill Shielding"></option>
+                            <option value="Proteção a Death"></option>
+                            <option value="Proteção a Earth"></option>
+                            <option value="Proteção a Fire"></option>
+                            <option value="Proteção a Ice"></option>
+                            <option value="Proteção a Energy"></option>
+                            <option value="Proteção a Holy"></option>
+                        </datalist>
+                    </span>
+                        <span id="imbui-backpack" class="invisivel">
+                            <label for="backpack">Imbuiments Bota:</label>
+                            <input type="text" name="backpack" id="i-backpack" list="backpacks">
+                            <datalist id="backpacks">
+                                <option value="Aumento de Capacidade"></option>
+                            </datalist>
+                        </span>
+                        <br>
+                        <span id="imbui-life-leech" class="invisivel">
+                            <label for="tier">Tier de Imbui:</label>
+                            <input type="text" name="tier" id="i-tier" list="tiers">
+                            <datalist id="tiers">
+                                <option value="Basic">Converte 5% do dano para HP com chance de 100%.</option>
+                                <option value="Intricate">Converte 10% do dano para HP com chance de 100%.</option>
+                                <option value="Powerful">Converte 25% do dano para HP com chance de 100%.</option>
+                            </datalist>
+                            <br>
+                            <span id="vn1" >
+                                <label for="vampire">Vampire teech:</label>
+                                <input type="number" name="vampire" id="ivampire"placeholder="Preço por unidade" min="0" oninput="iprecovampire.innerHTML = Number(ivampire.value) * Number(25)">
+                                <label for="precovampire">Preço total:</label>
+                                <output name="precovampire"  id="iprecovampire">0</output>
+                                <br>
+                            </span>
+                            <span id="vn2">
+                                <label for="bloody">Bloody Pincers:</label>
+                                <input type="number" name="bloody" id="ibloody" placeholder="Preço por unidade" min="0" oninput="iprecobloody.innerHTML = Number(ibloody.value) * Number(15)">
+                                <label for="precobloody">Preço total:</label>
+                                <output name="precobloody" id="iprecobloody">0</output>
+                            </span>
+                            <br>
+                            <span id="vn3">
+                                <label for="deadbrain">Piece of Dead Brain:</label>
+                                <input type="number" name="deadbrain" id="ideadbrain" placeholder="Preço por unidade" min="0" oninput="iprecodeadbrain.innerHTML = Number(ideadbrain.value) * Number(5)">
+                                <label for="precodeadbrain">Preço total:</label>
+                                <output name="precodeadbrain" id="iprecodeadbrain">0</output>
+                            </span>
+                            <br>
+                            <span>
+                                <button id="btnclc">Clique </button>
+                            </span>
+                            
+                        </span>
+            </form>
+        </div>
+    </main>
+    <script src="scripts/visibilidade.js"></script>
+    <script src="scripts/calc.js"></script>
+</body>
+</html>
