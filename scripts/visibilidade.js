@@ -1,7 +1,7 @@
 var equipImbui = document.querySelector("#i-item");
 
 equipImbui.addEventListener('input',function(event){
-    event.preventDefault;
+    event.preventDefault();
     var item = cadastraItem(equipImbui);
     if (item=="Espada" || item=="Clava" || item=="Axe"){
         var disableMe = document.querySelector("#imbui-melee");
@@ -35,7 +35,6 @@ equipImbui.addEventListener('input',function(event){
         var disableBa = document.querySelector("#imbui-backpack");
         disableBa.classList.remove("invisivel");
     };
-
     if (item==""){
         var disableAll = document.querySelector("#imbui-cajado");
         disableAll.classList.add("invisivel");
@@ -54,26 +53,38 @@ equipImbui.addEventListener('input',function(event){
         var disableAll = document.querySelector("#imbui-backpack");
         disableAll.classList.add("invisivel");
     }
+
 var meleeInput = document.querySelector("#i-melee");
 meleeInput.addEventListener('input',function(event){
     event.preventDefault;
     var melee = cadastraItem(meleeInput);
-    console.log(melee);
     if (melee=="Life Leech"){
         var disableLi = document.querySelector("#imbui-life-leech");
         disableLi.classList.remove("invisivel")
     }
 })
+
 var tierImbui = document.querySelector("#imbui-life-leech");
 tierImbui.addEventListener('input', function(event){
     event.preventDefault;
     var disableVn1 = document.querySelector("#vn1")
-    disableVn1.classList.remove("invisivel")
+    if (disableVn1=="Basic"){
+        disableVn1.classList.remove("invisivel")
+    }else{
+        console.log('erro')
+    }
+
+    var disableVn2 = document.querySelector("#vn2")
+    disableVn2.classList.remove("invisivel")
+    var disableVn3 = document.querySelector("#vn3")
+    disableVn3.classList.remove("invisivel")
+})
 })
 
 
 
-})
+
+
 
 
 var slots = document.querySelector("#i-slot");

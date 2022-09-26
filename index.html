@@ -129,21 +129,21 @@
                                 <option value="Powerful">Converte 25% do dano para HP com chance de 100%.</option>
                             </datalist>
                             <br>
-                            <span id="vn1" >
+                            <span id="vn1" class="invisivel">
                                 <label for="vampire">Vampire teech:</label>
                                 <input type="number" name="vampire" id="ivampire"placeholder="Preço por unidade" min="0" oninput="iprecovampire.innerHTML = Number(ivampire.value) * Number(25)">
                                 <label for="precovampire">Preço total:</label>
-                                <output name="precovampire"  id="iprecovampire">0</output>
+                                <output name="precovampire"  id="iprecovampire"></output>
                                 <br>
                             </span>
-                            <span id="vn2">
+                            <span id="vn2" class="invisivel">
                                 <label for="bloody">Bloody Pincers:</label>
                                 <input type="number" name="bloody" id="ibloody" placeholder="Preço por unidade" min="0" oninput="iprecobloody.innerHTML = Number(ibloody.value) * Number(15)">
                                 <label for="precobloody">Preço total:</label>
                                 <output name="precobloody" id="iprecobloody">0</output>
                             </span>
                             <br>
-                            <span id="vn3">
+                            <span id="vn3" class="invisivel">
                                 <label for="deadbrain">Piece of Dead Brain:</label>
                                 <input type="number" name="deadbrain" id="ideadbrain" placeholder="Preço por unidade" min="0" oninput="iprecodeadbrain.innerHTML = Number(ideadbrain.value) * Number(5)">
                                 <label for="precodeadbrain">Preço total:</label>
@@ -153,6 +153,9 @@
                             <span>
                                 <button id="btnclc">Clique </button>
                             </span>
+                            <p id="totvalor">Valor total do imbui: 
+
+                            </p>
                             
                         </span>
             </form>
