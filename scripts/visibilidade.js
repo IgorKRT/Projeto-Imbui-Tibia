@@ -71,8 +71,6 @@ tierImbui.addEventListener('input', function(event){
     if (checkTier=="Basic"){
         var disableVn1 = document.querySelector("#vn1");
         disableVn1.classList.remove("invisivel")
-        return
-        
     }
     if (checkTier=="Intricate"){
         var disableVn1 = document.querySelector("#vn1");
@@ -95,7 +93,6 @@ tierImbui.addEventListener('input', function(event){
         disableVn2.classList.add("invisivel")
         var disableVn3 = document.querySelector("#vn3")
         disableVn3.classList.add("invisivel")
-
    }
 })
 })
