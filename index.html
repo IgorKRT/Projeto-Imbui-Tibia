@@ -40,7 +40,7 @@
                     </span>
                     <br>
                     <span id="imbui-melee" class="invisivel">
-                        <label for="melee">Imbuiment de arma melee/bow:</label>
+                        <label for="melee">Imbuiment de arma melee:</label>
                         <input type="text" name="melee" id="i-melee" list="melees">
                         <datalist id="melees">
                             <option value="Life Leech"></option>
@@ -58,7 +58,7 @@
                             <option value="Critical Hit"></option>
                         </datalist>
                     </span>
-<!--                    <span id="imbui-distancia" class="invisivel">
+                   <span id="imbui-distancia" class="invisivel">
                         <label for="distancia">Imbuiment de arma distancia:</label>
                         <input type="text" name="distancia" id="i-distancia" list="distancias">
                         <datalist id="distancias">
@@ -68,7 +68,6 @@
                             <option value="Skill Distance"></option>
                         </datalist>
                     </span>
--->
                     <span id="imbui-capacete" class="invisivel">
                         <label for="capacete">Imbuiments Capatece:</label>
                         <input type="text" name="capacete" id="i-capacete" list="capacetes">
@@ -151,13 +150,42 @@
                                 <output name="precodeadbrain" id="iprecodeadbrain">0</output>
                             </span>
                             <br>
-                            <span><button id="btn-life">Valor final: <p id="totvalor"></p></button></span>
+
+
+                            <span><button id="btn-life">Valor final: <p id="totvalor"></p></button>
+                                <br>
+                            </span>
+
+                            <button id="gold">Valor em Gold Token</button>
+                            <span id="gold-token" class="invisivel">
+                                <span id="gt-dois" class="invisivel"> 
+                                    <label for="gtTwo">Preço Gold token?</label>
+                                    <input type="number" name="gtTwo" id="igttwo" placeholder="Preço por unidade" oninput="iprecogtTwo.innerHTML = Number(igttwo.value)*2+15000">
+                                    <label for="iprecogtTwo">Total:</label>
+                                    <output id="iprecogtTwo" >0</output>
+                                </span>
+                                <span id="gt-quatro"class="invisivel"> 
+                                    <label for="gtFour">Preço Gold token?</label>
+                                    <input type="number" name="gtFour" id="igtfour" placeholder="Preço por unidade" oninput="iprecogtFour.innerHTML = Number(igtfour.value)*4+55000">
+                                    <label for="iprecogtFour">Total:</label>
+                                    <output id="iprecogtFour">0</output>
+                                </span>
+                                <span id="gt-seis"class="invisivel">
+                                    <label for="gtSix">Preço Gold token?</label>
+                                    <input type="number" name="gtSix" id="igtsix" placeholder="Preço por unidade" oninput="iprecogtSix.innerHTML = Number(igtsix.value)*6+150000"> 
+                                    <label for="iprecogtSix">Total:</label>
+                                    <output id="iprecogtSix">0</output>
+                                </span>
+
+                            </span>
+
+
                         </span>
             </form>
         </div>
     </main>
     <script src="scripts/visibilidade.js"></script>
-    <script src="scripts/calc.js"></script>
     <script src="scripts/life-leech.js"></script>
+    <script src="scripts/gold-token.js"></script>
 </body>
 </html>

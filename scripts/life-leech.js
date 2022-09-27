@@ -7,6 +7,26 @@ meleeInput.addEventListener('input',function(event){
         disableLi.classList.remove("invisivel")
     }
 })
+var armaduraInput = document.querySelector("#i-armadura");
+armaduraInput.addEventListener('input', function(event){
+    event.preventDefault;
+    var armadura = cadastraItem(armaduraInput);
+    if (armadura=="Life Leech"){
+        var disableLi = document.querySelector("#imbui-life-leech");
+        disableLi.classList.remove("invisivel");
+    }
+})
+var arcoInput = document.querySelector("#i-distancia");
+arcoInput.addEventListener('input', function(event){
+    event.preventDefault;
+    var arco = cadastraItem(arcoInput);
+    if (arco=="Life Leech"){
+        var disableLi = document.querySelector("#imbui-life-leech");
+        disableLi.classList.remove("invisivel");
+    }
+})
+
+
 var tierImbui = document.querySelector("#imbui-life-leech");
 tierImbui.addEventListener('input', function(event){
     event.preventDefault;
@@ -14,29 +34,43 @@ tierImbui.addEventListener('input', function(event){
     var checkTier = document.querySelector("#i-tier").value;
     if (checkTier=="Basic"){
         var disableVn1 = document.querySelector("#vn1");
-        disableVn1.classList.remove("invisivel")
+        disableVn1.classList.remove("invisivel");
+        var disablegt = document.querySelector("#gt-dois");
+        disablegt.classList.remove("invisivel");
     }
     if (checkTier=="Intricate"){
         var disableVn1 = document.querySelector("#vn1");
-        disableVn1.classList.remove("invisivel")
-        var disableVn2 = document.querySelector("#vn2")
-        disableVn2.classList.remove("invisivel")
+        disableVn1.classList.remove("invisivel");
+        var disableVn2 = document.querySelector("#vn2");
+        disableVn2.classList.remove("invisivel");
+        var disablegt = document.querySelector("#gt-quatro");
+        disablegt.classList.remove("invisivel");
     }
    if (checkTier=="Powerful"){        
         var disableVn1 = document.querySelector("#vn1");
-        disableVn1.classList.remove("invisivel")
-        var disableVn2 = document.querySelector("#vn2")
-        disableVn2.classList.remove("invisivel")
-        var disableVn3 = document.querySelector("#vn3")
-        disableVn3.classList.remove("invisivel")
+        disableVn1.classList.remove("invisivel");
+        var disableVn2 = document.querySelector("#vn2");
+        disableVn2.classList.remove("invisivel");
+        var disableVn3 = document.querySelector("#vn3");
+        disableVn3.classList.remove("invisivel");
+        var disablegt = document.querySelector("#gt-seis");
+        disablegt.classList.remove("invisivel");
    }
    if (checkTier==""){
         var disableVn1 = document.querySelector("#vn1");
-        disableVn1.classList.add("invisivel")
-        var disableVn2 = document.querySelector("#vn2")
-        disableVn2.classList.add("invisivel")
-        var disableVn3 = document.querySelector("#vn3")
-        disableVn3.classList.add("invisivel")
+        disableVn1.classList.add("invisivel");
+        var disableVn2 = document.querySelector("#vn2");
+        disableVn2.classList.add("invisivel");
+        var disableVn3 = document.querySelector("#vn3");
+        disableVn3.classList.add("invisivel");
+        var disablegt = document.querySelector("#gt-dois");
+        disablegt.classList.add("invisivel");
+        var disablegt = document.querySelector("#gt-quatro");
+        disablegt.classList.add("invisivel");
+        var disablegt = document.querySelector("#gt-seis");
+        disablegt.classList.add("invisivel");
+        var disablegtgeral = document.querySelector("#gold-token");
+        disablegtgeral.classList.add("invisivel");
    }
 })
 

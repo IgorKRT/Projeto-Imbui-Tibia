@@ -12,7 +12,7 @@ equipImbui.addEventListener('input',function(event){
         disableCa.classList.remove("invisivel");
     };
     if (item=="Arco/Besta"){
-        var disableDis = document.querySelector("#imbui-melee");
+        var disableDis = document.querySelector("#imbui-distancia");
         disableDis.classList.remove("invisivel");
     };
     if (item=="Capacete"){
@@ -40,7 +40,7 @@ equipImbui.addEventListener('input',function(event){
         disableAll.classList.add("invisivel");
         var disableAll = document.querySelector("#imbui-melee");
         disableAll.classList.add("invisivel");
-        var disableAll = document.querySelector("#imbui-melee");
+        var disableAll = document.querySelector("#imbui-distancia");
         disableAll.classList.add("invisivel");
         var disableAll = document.querySelector("#imbui-capacete");
         disableAll.classList.add("invisivel");
@@ -57,7 +57,7 @@ equipImbui.addEventListener('input',function(event){
 
 var slots = document.querySelector("#i-slot");
 slots.addEventListener('input',function(event){
-    event.preventDefault;
+    event.preventDefault();
     var slot = cadastraItem(slots);
     console.log(slot)
     if (slot=="1 Slot"){console.log("slot um")}
