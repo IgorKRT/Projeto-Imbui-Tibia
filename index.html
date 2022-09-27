@@ -40,13 +40,13 @@
                     </span>
                     <br>
                     <span id="imbui-melee" class="invisivel">
-                        <label for="melee">Imbuiment de arma melee:</label>
+                        <label for="melee">Imbuiment de arma melee/bow:</label>
                         <input type="text" name="melee" id="i-melee" list="melees">
                         <datalist id="melees">
                             <option value="Life Leech"></option>
                             <option value="Mana Leech"></option>
                             <option value="Critical Hit"></option>
-                            <option value="Skill Melee"></option>
+                            <option value="Buff Skill"></option>
                         </datalist>
                     </span>
                     <span id="imbui-cajado" class="invisivel">
@@ -58,7 +58,7 @@
                             <option value="Critical Hit"></option>
                         </datalist>
                     </span>
-                    <span id="imbui-distancia" class="invisivel">
+<!--                    <span id="imbui-distancia" class="invisivel">
                         <label for="distancia">Imbuiment de arma distancia:</label>
                         <input type="text" name="distancia" id="i-distancia" list="distancias">
                         <datalist id="distancias">
@@ -68,6 +68,7 @@
                             <option value="Skill Distance"></option>
                         </datalist>
                     </span>
+-->
                     <span id="imbui-capacete" class="invisivel">
                         <label for="capacete">Imbuiments Capatece:</label>
                         <input type="text" name="capacete" id="i-capacete" list="capacetes">
@@ -150,18 +151,13 @@
                                 <output name="precodeadbrain" id="iprecodeadbrain">0</output>
                             </span>
                             <br>
-                            <span>
-                                <button id="btnclc">Clique </button>
-                            </span>
-                            <p id="totvalor">Valor total do imbui: 
-
-                            </p>
-                            
+                            <span><button id="btn-life">Valor final: <p id="totvalor"></p></button></span>
                         </span>
             </form>
         </div>
     </main>
     <script src="scripts/visibilidade.js"></script>
     <script src="scripts/calc.js"></script>
+    <script src="scripts/life-leech.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@ equipImbui.addEventListener('input',function(event){
         disableCa.classList.remove("invisivel");
     };
     if (item=="Arco/Besta"){
-        var disableDis = document.querySelector("#imbui-distancia");
+        var disableDis = document.querySelector("#imbui-melee");
         disableDis.classList.remove("invisivel");
     };
     if (item=="Capacete"){
@@ -40,7 +40,7 @@ equipImbui.addEventListener('input',function(event){
         disableAll.classList.add("invisivel");
         var disableAll = document.querySelector("#imbui-melee");
         disableAll.classList.add("invisivel");
-        var disableAll = document.querySelector("#imbui-distancia");
+        var disableAll = document.querySelector("#imbui-melee");
         disableAll.classList.add("invisivel");
         var disableAll = document.querySelector("#imbui-capacete");
         disableAll.classList.add("invisivel");
@@ -53,48 +53,6 @@ equipImbui.addEventListener('input',function(event){
         var disableAll = document.querySelector("#imbui-backpack");
         disableAll.classList.add("invisivel");
     }
-
-var meleeInput = document.querySelector("#i-melee");
-meleeInput.addEventListener('input',function(event){
-    event.preventDefault;
-    var melee = cadastraItem(meleeInput);
-    if (melee=="Life Leech"){
-        var disableLi = document.querySelector("#imbui-life-leech");
-        disableLi.classList.remove("invisivel")
-    }
-})
-
-var tierImbui = document.querySelector("#imbui-life-leech");
-tierImbui.addEventListener('input', function(event){
-    event.preventDefault;
-    var checkTier = document.querySelector("#i-tier").value;
-    if (checkTier=="Basic"){
-        var disableVn1 = document.querySelector("#vn1");
-        disableVn1.classList.remove("invisivel")
-    }
-    if (checkTier=="Intricate"){
-        var disableVn1 = document.querySelector("#vn1");
-        disableVn1.classList.remove("invisivel")
-        var disableVn2 = document.querySelector("#vn2")
-        disableVn2.classList.remove("invisivel")
-    }
-   if (checkTier=="Powerful"){        
-        var disableVn1 = document.querySelector("#vn1");
-        disableVn1.classList.remove("invisivel")
-        var disableVn2 = document.querySelector("#vn2")
-        disableVn2.classList.remove("invisivel")
-        var disableVn3 = document.querySelector("#vn3")
-        disableVn3.classList.remove("invisivel")
-   }
-   if (checkTier==""){
-        var disableVn1 = document.querySelector("#vn1");
-        disableVn1.classList.add("invisivel")
-        var disableVn2 = document.querySelector("#vn2")
-        disableVn2.classList.add("invisivel")
-        var disableVn3 = document.querySelector("#vn3")
-        disableVn3.classList.add("invisivel")
-   }
-})
 })
 
 var slots = document.querySelector("#i-slot");
@@ -112,6 +70,3 @@ function cadastraItem(valor){
     return selecionado;
 }
 
-function tierImbuimente(checkTier){
-
-}
