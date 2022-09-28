@@ -11,7 +11,7 @@ cajadoInput.addEventListener('input', function(event){
 var tierImbui = document.querySelector("#imbui-skil-magic");
 tierImbui.addEventListener('input', function(event){
     event.preventDefault;
-    document.querySelector("#totvalor").innerHTML ="";
+    document.querySelector("#totmagic").innerHTML ="";
     var checkTier = document.querySelector("#i-tier-skilmagic").value;
     var btn = document.querySelector("#botoes");
     btn.classList.remove("invisivel");
@@ -56,12 +56,12 @@ tierImbui.addEventListener('input', function(event){
         disablegtgeral.classList.add("invisivel");
    }
 })
-var botaoCacl = document.querySelector("#btn-total");
+var botaoCacl = document.querySelector("#btn-magic");
 botaoCacl.addEventListener('click', function(event){
    event.preventDefault();
    var checkTier = document.querySelector("#i-tier-skilmagic").value;
    var res = tierImbuimenteMagic(checkTier);
-   document.querySelector("#totvalor").innerHTML = res;
+   document.querySelector("#totmagic").innerHTML = res;
 })
 function tierImbuimenteMagic(tier){
     var nvOne = document.querySelector("#ielvis").value;

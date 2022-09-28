@@ -49,6 +49,11 @@
                             <option value="Skil Espada"></option>
                             <option value="Skil Clava"></option>
                             <option value="Skil Axe"></option>
+                            <option value="Dano Death"></option>
+                            <option value="Dano Earth"></option>
+                            <option value="Dano Energy"></option>
+                            <option value="Dano Fire"></option>
+                            <option value="Dan Ice"></option>
                         </datalist>
                     </span>
 
@@ -70,6 +75,11 @@
                             <option value="Mana Leech"></option>
                             <option value="Critical Hit"></option>
                             <option value="Skil Distance"></option>
+                            <option value="Dano Death"></option>
+                            <option value="Dano Earth"></option>
+                            <option value="Dano Energy"></option>
+                            <option value="Dano Fire"></option>
+                            <option value="Dano Ice"></option>
                         </datalist>
                     </span>
 
@@ -130,6 +140,7 @@
                         </datalist>
                     </span>
                     <br>
+
                     <span id="imbui-life-leech" class="invisivel">
                         <label for="tier">Tier de Imbui:</label>
                         <input type="text" name="tier" id="i-tier" list="tiers">
@@ -160,8 +171,10 @@
                             <label for="precodeadbrain">Preço total:</label>
                             <output name="precodeadbrain" id="iprecodeadbrain">0</output>
                         </span>
-
+                        <br>
+                        <button id="btn-life">Valor final: <p id="totlife"></p></button>
                     </span>
+
                     <span id="imbui-mana-leech" class="invisivel">
                         <label for="tier-mana">Tier de Imbui:</label>
                         <input type="text" name="tier-mana" id="i-tier-mana" list="tiermana">
@@ -170,7 +183,6 @@
                             <option value="Intricate">Converte 5% do dano para mana com chance de 100%.</option>
                             <option value="Powerful">Converte 8% do dano para mana com chance de 100%.</option>
                         </datalist>
-
                         <span id="vn1-mana" class="invisivel">
                             <br>
                             <label for="rope">Rope Belt:</label>
@@ -183,9 +195,8 @@
                             <label for="silencer">Silencer Claw:</label>
                             <input type="number" name="silencer" id="isilencer" placeholder="Preço por unidade" min="0" oninput="iprecosilencer.innerHTML = Number(isilencer.value) * Number(25)">
                             <label for="precosilencer">Preço total:</label>
-                            <output name="precobsilencer" id="iprecosilencer">0</output>
+                            <output name="precosilencer" id="iprecosilencer">0</output>
                         </span>
-
                         <span id="vn3-mana" class="invisivel">
                             <br>
                             <label for="grimeleech">Some Grimeleech Wing:</label>
@@ -193,6 +204,8 @@
                             <label for="precogrimeleech">Preço total:</label>
                             <output name="precogrimeleech" id="iprecogrimeleech">0</output>
                         </span>
+                        <br>
+                        <button id="btn-mana">Valor final: <p id="totmana"></p></button>
                     </span>
                 
                     <span id="imbui-critical" class="invisivel">
@@ -215,7 +228,7 @@
                             <label for="sabretooth">Sabretooth:</label>
                             <input type="number" name="sabretooth" id="isabretooth" placeholder="Preço por unidade" min="0" oninput="iprecosabretooth.innerHTML = Number(isabretooth.value) * Number(25)">
                             <label for="precosabretooth">Preço total:</label>
-                            <output name="precobsabretooth" id="iprecosabretooth">0</output>
+                            <output name="precosabretooth" id="iprecosabretooth">0</output>
                         </span>
                         <span id="vn3-critical" class="invisivel">
                             <br>
@@ -224,7 +237,8 @@
                             <label for="precovexclaw">Preço total:</label>
                             <output name="precovexclaw" id="iprecovexclaw">0</output>
                         </span>
-                    </span>
+                        <br>
+                        <button id="btn-critical">Valor final: <p id="totcritical"></p></button>
                     </span>
 
                     <span id="imbui-skil-espada" class="invisivel">
@@ -247,7 +261,7 @@
                             <label for="mooh">Mooh'tah Shell:</label>
                             <input type="number" name="mooh" id="imooh" placeholder="Preço por unidade" min="0" oninput="iprecomooh.innerHTML = Number(imooh.value) * Number(25)">
                             <label for="precomooh">Preço total:</label>
-                            <output name="precobmooh" id="iprecomooh">0</output>
+                            <output name="precomooh" id="iprecomooh">0</output>
                         </span>
                         <span id="vn3-espada" class="invisivel">
                             <br>
@@ -256,6 +270,8 @@
                             <label for="precocrystal">Preço total:</label>
                             <output name="precocrystal" id="iprecocrystal">0</output>
                         </span>
+                        <br>
+                        <button id="btn-espada">Valor final: <p id="totespada"></p></button>
                     </span>
 
                     <span id="imbui-skil-clava" class="invisivel">
@@ -278,7 +294,7 @@
                             <label for="ogre">Ogre Nose Ring:</label>
                             <input type="number" name="ogre" id="iogre" placeholder="Preço por unidade" min="0" oninput="iprecoogre.innerHTML = Number(iogre.value) * Number(15)">
                             <label for="precoogre">Preço total:</label>
-                            <output name="precobogre" id="iprecoogre">0</output>
+                            <output name="precoogre" id="iprecoogre">0</output>
                         </span>
                         <span id="vn3-clava" class="invisivel">
                             <br>
@@ -287,6 +303,8 @@
                             <label for="precowarmaster">Preço total:</label>
                             <output name="precowarmaster" id="iprecowarmaster">0</output>
                         </span>
+                        <br>
+                        <button id="btn-clava">Valor final: <p id="tot-clava"></p></button>
                     </span>
 
                     <span id="imbui-skil-axe" class="invisivel">
@@ -309,7 +327,7 @@
                             <label for="battlestone">Battle Stone:</label>
                             <input type="number" name="battlestone" id="ibattlestone" placeholder="Preço por unidade" min="0" oninput="iprecobattlestone.innerHTML = Number(ibattlestone.value) * Number(25)">
                             <label for="precobattlestone">Preço total:</label>
-                            <output name="precobbattlestone" id="iprecobattlestone">0</output>
+                            <output name="precobattlestone" id="iprecobattlestone">0</output>
                         </span>
                         <span id="vn3-axe" class="invisivel">
                             <br>
@@ -318,6 +336,8 @@
                             <label for="precomoohtant">Preço total:</label>
                             <output name="precomoohtant" id="iprecomoohtant">0</output>
                         </span>
+                        <br>
+                        <button id="btn-axe">Valor final: <p id="totaxe"></p></button>
                     </span>
 
                     <span id="imbui-skil-magic" class="invisivel">
@@ -340,7 +360,7 @@
                             <label for="shamanic">Broken Shamanic Staff:</label>
                             <input type="number" name="shamanic" id="ishamanic" placeholder="Preço por unidade" min="0" oninput="iprecoshamanic.innerHTML = Number(ishamanic.value) * Number(15)">
                             <label for="precoshamanic">Preço total:</label>
-                            <output name="precobshamanic" id="iprecoshamanic">0</output>
+                            <output name="precoshamanic" id="iprecoshamanic">0</output>
                         </span>
                         <span id="vn3-magic" class="invisivel">
                             <br>
@@ -349,6 +369,8 @@
                             <label for="precomedusa">Preço total:</label>
                             <output name="precomedusa" id="iprecomedusa">0</output>
                         </span>
+                        <br>
+                        <button id="btn-magic">Valor final: <p id="totmagic"></p></button>
                     </span>
 
                     <span id="imbui-skil-distancia" class="invisivel">
@@ -371,7 +393,7 @@
                             <label for="elvenhoof">Elven Hoof:</label>
                             <input type="number" name="elvenhoof" id="ielvenhoof" placeholder="Preço por unidade" min="0" oninput="iprecoelvenhoof.innerHTML = Number(ielvenhoof.value) * Number(20)">
                             <label for="precoelvenhoof">Preço total:</label>
-                            <output name="precobelvenhoof" id="iprecoelvenhoof">0</output>
+                            <output name="precoelvenhoof" id="iprecoelvenhoof">0</output>
                         </span>
                         <span id="vn3-distancia" class="invisivel">
                             <br>
@@ -380,6 +402,8 @@
                             <label for="precometalspike">Preço total:</label>
                             <output name="precometalspike" id="iprecometalspike">0</output>
                         </span>
+                        <br>
+                            <button id="btn-distancia">Valor final: <p id="totdistancia"></p></button>
                     </span>
 
                     <span id="imbui-skil-escudo" class="invisivel">
@@ -402,7 +426,7 @@
                             <label for="brimstone">Brimstone Shell:</label>
                             <input type="number" name="brimstone" id="ibrimstone" placeholder="Preço por unidade" min="0" oninput="iprecobrimstone.innerHTML = Number(ibrimstone.value) * Number(25)">
                             <label for="precobrimstone">Preço total:</label>
-                            <output name="precobbrimstone" id="iprecobrimstone">0</output>
+                            <output name="precobrimstone" id="iprecobrimstone">0</output>
                         </span>
                         <span id="vn3-escudo" class="invisivel">
                             <br>
@@ -411,79 +435,359 @@
                             <label for="precofrazzle">Preço total:</label>
                             <output name="precofrazzle" id="iprecofrazzle">0</output>
                         </span>
-                    </span>
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <br>
-                    <span id="botoes" class="invisivel">
-                        <button id="btn-total">Valor final: <p id="totvalor"></p></button>
                         <br>
-                        <button id="gold">Valor em Gold Token</button>
-                        <span id="gold-token" class="invisivel">
-                            <span id="gt-dois" class="invisivel">
-                                <label for="gtTwo">Preço Gold token?</label>
-                                <input type="number" name="gtTwo" id="igttwo" placeholder="Preço por unidade" oninput="iprecogtTwo.innerHTML = Number(igttwo.value)*2+15000">
-                                <label for="iprecogtTwo">Total:</label>
-                                <output id="iprecogtTwo" >0</output>
-                            </span>
-                            <span id="gt-quatro"class="invisivel">
-                                <label for="gtFour">Preço Gold token?</label>
-                                <input type="number" name="gtFour" id="igtfour" placeholder="Preço por unidade" oninput="iprecogtFour.innerHTML = Number(igtfour.value)*4+55000">
-                                <label for="iprecogtFour">Total:</label>
-                                <output id="iprecogtFour">0</output>
-                            </span>
-                            <span id="gt-seis"class="invisivel">
-                                <label for="gtSix">Preço Gold token?</label>
-                                <input type="number" name="gtSix" id="igtsix" placeholder="Preço por unidade" oninput="iprecogtSix.innerHTML = Number(igtsix.value)*6+150000">
-                                <label for="iprecogtSix">Total:</label>
-                                <output id="iprecogtSix">0</output>
-                            </span>
+                            <button id="btn-escudo">Valor final: <p id="totescudo"></p></button>
+                    </span> 
+
+                    <span id="imbui-resdeath" class="invisivel">
+                        <label for="tier-resdeath">Tier de Imbui:</label>
+                        <input type="text" name="tier-resdeath" id="i-tier-resdeath" list="tierskilresdeath">
+                        <datalist id="tierskilresdeath">
+                            <option value="Basic">Reduz dano de Death em 2%.</option>
+                            <option value="Intricate">Reduz dano de Death em 5%.</option>
+                            <option value="Powerful"> Reduz dano de Death em 10%.</option>
+                        </datalist>
+                        <span id="vn1-resdeath" class="invisivel">
+                            <br>
+                            <label for="flask">Flask of Embalming Fluid:</label>
+                            <input type="number" name="flask" id="iflask"placeholder="Preço por unidade" min="0" oninput="iprecoflask.innerHTML = Number(iflask.value) * Number(25)">
+                            <label for="precoflask">Preço total:</label>
+                            <output name="precoflask"  id="iprecoflask">0</output>
                         </span>
-                    </span>          
+                        <span id="vn2-resdeath" class="invisivel">
+                            <br>
+                            <label for="gloomwolf">Gloom Wolf Fur:</label>
+                            <input type="number" name="gloomwolf" id="igloomwolf" placeholder="Preço por unidade" min="0" oninput="iprecogloomwolf.innerHTML = Number(igloomwolf.value) * Number(20)">
+                            <label for="precogloomwolf">Preço total:</label>
+                            <output name="precogloomwolf" id="iprecogloomwolf">0</output>
+                        </span>
+                        <span id="vn3-resdeath" class="invisivel">
+                            <br>
+                            <label for="mystical">Mystical Hourglass:</label>
+                            <input type="number" name="mystical" id="imystical" placeholder="Preço por unidade" min="0" oninput="iprecomystical.innerHTML = Number(imystical.value) * Number(25)">
+                            <label for="precomystical">Preço total:</label>
+                            <output name="precomystical" id="iprecomystical">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-resdeath">Valor final: <p id="totresdeath"></p></button>
+                    </span> 
+
+                    <span id="imbui-resfire" class="invisivel">
+                        <label for="tier-resfire">Tier de Imbui:</label>
+                        <input type="text" name="tier-resfire" id="i-tier-resfire" list="tierskilresfire">
+                        <datalist id="tierskilresfire">
+                            <option value="Basic">Reduz dano de Fire em 3%.</option>
+                            <option value="Intricate">Reduz dano de Fire em 8%.</option>
+                            <option value="Powerful"> Reduz dano de Fire em 15%.</option>
+                        </datalist>
+                        <span id="vn1-resfire" class="invisivel">
+                            <br>
+                            <label for="dragonleather">Green Dragon Leather:</label>
+                            <input type="number" name="dragonleather" id="idragonleather"placeholder="Preço por unidade" min="0" oninput="iprecodragonleather.innerHTML = Number(idragonleather.value) * Number(20)">
+                            <label for="precodragonleather">Preço total:</label>
+                            <output name="precodragonleather"  id="iprecodragonleather">0</output>
+                        </span>
+                        <span id="vn2-resfire" class="invisivel">
+                            <br>
+                            <label for="blazing">Blazing Bone:</label>
+                            <input type="number" name="blazing" id="iblazing" placeholder="Preço por unidade" min="0" oninput="iprecoblazing.innerHTML = Number(iblazing.value) * Number(10)">
+                            <label for="precoblazing">Preço total:</label>
+                            <output name="precoblazing" id="iprecoblazing">0</output>
+                        </span>
+                        <span id="vn3-resfire" class="invisivel">
+                            <br>
+                            <label for="draken">Draken Sulphur:</label>
+                            <input type="number" name="draken" id="idraken" placeholder="Preço por unidade" min="0" oninput="iprecodraken.innerHTML = Number(idraken.value) * Number(5)">
+                            <label for="precodraken">Preço total:</label>
+                            <output name="precodraken" id="iprecodraken">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-resfire">Valor final: <p id="totresfire"></p></button>
+                    </span> 
+
+                    <span id="imbui-researth" class="invisivel">
+                        <label for="tier-researth">Tier de Imbui:</label>
+                        <input type="text" name="tier-researth" id="i-tier-researth" list="tierskilresearth">
+                        <datalist id="tierskilresearth">
+                            <option value="Basic">Reduz dano de Earth em 3%.</option>
+                            <option value="Intricate">Reduz dano de Earth em 8%.</option>
+                            <option value="Powerful"> Reduz dano de Earth em 15%.</option>
+                        </datalist>
+                        <span id="vn1-researth" class="invisivel">
+                            <br>
+                            <label for="swampling">Piece of Swampling Wood:</label>
+                            <input type="number" name="swampling" id="iswampling"placeholder="Preço por unidade" min="0" oninput="iprecoswampling.innerHTML = Number(iswampling.value) * Number(25)">
+                            <label for="precoswampling">Preço total:</label>
+                            <output name="precoswampling"  id="iprecoswampling">0</output>
+                        </span>
+                        <span id="vn2-researth" class="invisivel">
+                            <br>
+                            <label for="snakeskin">Snake Skin:</label>
+                            <input type="number" name="snakeskin" id="isnakeskin" placeholder="Preço por unidade" min="0" oninput="iprecosnakeskin.innerHTML = Number(isnakeskin.value) * Number(20)">
+                            <label for="precosnakeskin">Preço total:</label>
+                            <output name="precosnakeskin" id="iprecosnakeskin">0</output>
+                        </span>
+                        <span id="vn3-researth" class="invisivel">
+                            <br>
+                            <label for="brimstonef">Brimstone Fangs:</label>
+                            <input type="number" name="brimstonef" id="ibrimstonef" placeholder="Preço por unidade" min="0" oninput="iprecobrimstonef.innerHTML = Number(ibrimstonef.value) * Number(10)">
+                            <label for="precobrimstonef">Preço total:</label>
+                            <output name="precobrimstonef" id="iprecobrimstonef">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-researth">Valor final: <p id="totresearth"></p></button>
+                    </span> 
+
+                    <span id="imbui-resice" class="invisivel">
+                        <label for="tier-resice">Tier de Imbui:</label>
+                        <input type="text" name="tier-resice" id="i-tier-resice" list="tierskilresice">
+                        <datalist id="tierskilresice">
+                            <option value="Basic">Reduz dano de Ice em 3%.</option>
+                            <option value="Intricate">Reduz dano de Ice em 8%.</option>
+                            <option value="Powerful"> Reduz dano de Ice em 15%.</option>
+                        </datalist>
+                        <span id="vn1-resice" class="invisivel">
+                            <br>
+                            <label for="winterwolf">Winter Wolf:</label>
+                            <input type="number" name="winterwolf" id="iwinterwolf"placeholder="Preço por unidade" min="0" oninput="iprecowinterwolf.innerHTML = Number(iwinterwolf.value) * Number(25)">
+                            <label for="precowinterwolf">Preço total:</label>
+                            <output name="precowinterwolf"  id="iprecowinterwolf">0</output>
+                        </span>
+                        <span id="vn2-resice" class="invisivel">
+                            <br>
+                            <label for="thickfur">Thick Fur:</label>
+                            <input type="number" name="thickfur" id="ithickfur" placeholder="Preço por unidade" min="0" oninput="iprecothickfur.innerHTML = Number(ithickfur.value) * Number(15)">
+                            <label for="precothickfur">Preço total:</label>
+                            <output name="precothickfur" id="iprecothickfur">0</output>
+                        </span>
+                        <span id="vn3-resice" class="invisivel">
+                            <br>
+                            <label for="deeplingwarts">Deepling Warts:</label>
+                            <input type="number" name="deeplingwarts" id="ideeplingwarts" placeholder="Preço por unidade" min="0" oninput="iprecodeeplingwarts.innerHTML = Number(ideeplingwarts.value) * Number(10)">
+                            <label for="precodeeplingwarts">Preço total:</label>
+                            <output name="precodeeplingwarts" id="iprecodeeplingwarts">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-resice">Valor final: <p id="totresice"></p></button>
+                    </span> 
+
+                    <span id="imbui-resenergy" class="invisivel">
+                        <label for="tier-resenergy">Tier de Imbui:</label>
+                        <input type="text" name="tier-resenergy" id="i-tier-resenergy" list="tierskilresenergy">
+                        <datalist id="tierskilresenergy">
+                            <option value="Basic">Reduz dano de Energy em 3%.</option>
+                            <option value="Intricate">Reduz dano de Energy em 8%.</option>
+                            <option value="Powerful"> Reduz dano de Energy em 15%.</option>
+                        </datalist>
+                        <span id="vn1-resenergy" class="invisivel">
+                            <br>
+                            <label for="wyvern">Wyvern Talisman:</label>
+                            <input type="number" name="wyvern" id="iwyvern"placeholder="Preço por unidade" min="0" oninput="iprecowyvern.innerHTML = Number(iwyvern.value) * Number(20)">
+                            <label for="precowyvern">Preço total:</label>
+                            <output name="precowyvern"  id="iprecowyvern">0</output>
+                        </span>
+                        <span id="vn2-resenergy" class="invisivel">
+                            <br>
+                            <label for="crawler">Crawler Dead Plating:</label>
+                            <input type="number" name="crawler" id="icrawler" placeholder="Preço por unidade" min="0" oninput="iprecocrawler.innerHTML = Number(icrawler.value) * Number(15)">
+                            <label for="precocrawler">Preço total:</label>
+                            <output name="precocrawler" id="iprecocrawler">0</output>
+                        </span>
+                        <span id="vn3-resenergy" class="invisivel">
+                            <br>
+                            <label for="wyrm">Wyrm Scale:</label>
+                            <input type="number" name="wyrm" id="iwyrm" placeholder="Preço por unidade" min="0" oninput="iprecowyrm.innerHTML = Number(iwyrm.value) * Number(10)">
+                            <label for="precowyrm">Preço total:</label>
+                            <output name="precowyrm" id="iprecowyrm">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-resenergy">Valor final: <p id="totresenergy"></p></button>
+                    </span> 
+                    
+                    <span id="imbui-resholy" class="invisivel">
+                        <label for="tier-resholy">Tier de Imbui:</label>
+                        <input type="text" name="tier-resholy" id="i-tier-resholy" list="tierskilresholy">
+                        <datalist id="tierskilresholy">
+                            <option value="Basic">Reduz dano de Holy em 3%.</option>
+                            <option value="Intricate">Reduz dano de Holy em 8%.</option>
+                            <option value="Powerful"> Reduz dano de Holy em 15%.</option>
+                        </datalist>
+                        <span id="vn1-resholy" class="invisivel">
+                            <br>
+                            <label for="cultishrobe">Cultih Robe:</label>
+                            <input type="number" name="cultishrobe" id="icultishrobe"placeholder="Preço por unidade" min="0" oninput="iprecocultishrobe.innerHTML = Number(icultishrobe.value) * Number(25)">
+                            <label for="precocultishrobe">Preço total:</label>
+                            <output name="precocultishrobe"  id="iprecocultishrobe">0</output>
+                        </span>
+                        <span id="vn2-resholy" class="invisivel">
+                            <br>
+                            <label for="cultishmask">Cultish Mask:</label>
+                            <input type="number" name="cultishmask" id="icultishmask" placeholder="Preço por unidade" min="0" oninput="iprecocultishmask.innerHTML = Number(icultishmask.value) * Number(25)">
+                            <label for="precocultishmask">Preço total:</label>
+                            <output name="precocultishmask" id="iprecocultishmask">0</output>
+                        </span>
+                        <span id="vn3-resholy" class="invisivel">
+                            <br>
+                            <label for="hellspawn">Wyrm Scale:</label>
+                            <input type="number" name="hellspawn" id="ihellspawn" placeholder="Preço por unidade" min="0" oninput="iprecohellspawn.innerHTML = Number(ihellspawn.value) * Number(20)">
+                            <label for="precohellspawn">Preço total:</label>
+                            <output name="precohellspawn" id="iprecohellspawn">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-resholy">Valor final: <p id="totresholy"></p></button>
+                    </span> 
+                    
+                    <span id="imbui-death" class="invisivel">
+                        <label for="tier-death">Tier de Imbui:</label>
+                        <input type="text" name="tier-death" id="i-tier-death" list="tierskildeath">
+                        <datalist id="tierskildeath">
+                            <option value="Basic">Converte 10% de dano físico em dano de Death.</option>
+                            <option value="Intricate">Converte 25% de dano físico em dano de Death.</option>
+                            <option value="Powerful">Converte 50% de dano físico em dano de Death.</option>
+                        </datalist>
+                        <span id="vn1-death" class="invisivel">
+                            <br>
+                            <label for="graveearth">Pile of Grave Earth:</label>
+                            <input type="number" name="graveearth" id="igraveearth"placeholder="Preço por unidade" min="0" oninput="iprecograveearth.innerHTML = Number(igraveearth.value) * Number(25)">
+                            <label for="precograveearth">Preço total:</label>
+                            <output name="precograveearth"  id="iprecograveearth">0</output>
+                        </span>
+                        <span id="vn2-death" class="invisivel">
+                            <br>
+                            <label for="demonic">Demonic Skeletal:</label>
+                            <input type="number" name="demonic" id="idemonic" placeholder="Preço por unidade" min="0" oninput="iprecodemonic.innerHTML = Number(idemonic.value) * Number(20)">
+                            <label for="precodemonic">Preço total:</label>
+                            <output name="precodemonic" id="iprecodemonic">0</output>
+                        </span>
+                        <span id="vn3-death" class="invisivel">
+                            <br>
+                            <label for="petrified">Petrified Scream:</label>
+                            <input type="number" name="petrified" id="ipetrified" placeholder="Preço por unidade" min="0" oninput="iprecopetrified.innerHTML = Number(ipetrified.value) * Number(5)">
+                            <label for="precopetrified">Preço total:</label>
+                            <output name="precopetrified" id="iprecopetrified">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-death">Valor final: <p id="totdeath"></p></button>
+                    </span> 
+
+                    <span id="imbui-fire" class="invisivel">
+                        <label for="tier-fire">Tier de Imbui:</label>
+                        <input type="text" name="tier-fire" id="i-tier-fire" list="tierskilfire">
+                        <datalist id="tierskilfire">
+                            <option value="Basic">Converte 10% de dano físico em dano de Fire.</option>
+                            <option value="Intricate">Converte 25% de dano físico em dano de Fire.</option>
+                            <option value="Powerful">Converte 50% de dano físico em dano de Fire.</option>
+                        </datalist>
+                        <span id="vn1-fire" class="invisivel">
+                            <br>
+                            <label for="fiery">Fiery Heart:</label>
+                            <input type="number" name="fiery" id="ifiery"placeholder="Preço por unidade" min="0" oninput="iprecofiery.innerHTML = Number(ifiery.value) * Number(25)">
+                            <label for="precofiery">Preço total:</label>
+                            <output name="precofiery"  id="iprecofiery">0</output>
+                        </span>
+                        <span id="vn2-fire" class="invisivel">
+                            <br>
+                            <label for="greendragonscale">Demonic Skeletal:</label>
+                            <input type="number" name="greendragonscale" id="igreendragonscale" placeholder="Preço por unidade" min="0" oninput="iprecogreendragonscale.innerHTML = Number(igreendragonscale.value) * Number(5)">
+                            <label for="precogreendragonscale">Preço total:</label>
+                            <output name="precogreendragonscale" id="iprecogreendragonscale">0</output>
+                        </span>
+                        <span id="vn3-fire" class="invisivel">
+                            <br>
+                            <label for="demonhorn">Petrified Scream:</label>
+                            <input type="number" name="demonhorn" id="idemonhorn" placeholder="Preço por unidade" min="0" oninput="iprecodemonhorn.innerHTML = Number(idemonhorn.value) * Number(5)">
+                            <label for="precodemonhorn">Preço total:</label>
+                            <output name="precodemonhorn" id="iprecodemonhorn">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-fire">Valor final: <p id="totfire"></p></button>
+                    </span> 
+
+                    <span id="imbui-earth" class="invisivel">
+                        <label for="tier-earth">Tier de Imbui:</label>
+                        <input type="text" name="tier-earth" id="i-tier-earth" list="tierskilearth">
+                        <datalist id="tierskilearth">
+                            <option value="Basic">Converte 10% de dano físico em dano de Earth.</option>
+                            <option value="Intricate">Converte 25% de dano físico em dano de Earth.</option>
+                            <option value="Powerful">Converte 50% de dano físico em dano de Earth.</option>
+                        </datalist>
+                        <span id="vn1-earth" class="invisivel">
+                            <br>
+                            <label for="swampgrass">Swamp Grass:</label>
+                            <input type="number" name="swampgrass" id="iswampgrass"placeholder="Preço por unidade" min="0" oninput="iprecoswampgrass.innerHTML = Number(iswampgrass.value) * Number(25)">
+                            <label for="precoswampgrass">Preço total:</label>
+                            <output name="precoswampgrass"  id="iprecoswampgrass">0</output>
+                        </span>
+                        <span id="vn2-earth" class="invisivel">
+                            <br>
+                            <label for="poisonousslime">Poisonous Slime:</label>
+                            <input type="number" name="poisonousslime" id="ipoisonousslime" placeholder="Preço por unidade" min="0" oninput="iprecopoisonousslime.innerHTML = Number(ipoisonousslime.value) * Number(20)">
+                            <label for="precopoisonousslime">Preço total:</label>
+                            <output name="precopoisonousslime" id="iprecopoisonousslime">0</output>
+                        </span>
+                        <span id="vn3-earth" class="invisivel">
+                            <br>
+                            <label for="slimeheart">Slime Heart:</label>
+                            <input type="number" name="slimeheart" id="islimeheart" placeholder="Preço por unidade" min="0" oninput="iprecoslimeheart.innerHTML = Number(islimeheart.value) * Number(5)">
+                            <label for="precoslimeheart">Preço total:</label>
+                            <output name="precoslimeheart" id="iprecoslimeheart">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-earth">Valor final: <p id="totearth"></p></button>
+                    </span> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </form>
+        <br>
+        <span id="botoes" class="invisivel">
+     
+            <br>
+            <button id="gold">Valor em Gold Token</button>
+            <span id="gold-token" class="invisivel">
+                <span id="gt-dois" class="invisivel">
+                    <label for="gtTwo">Preço Gold token?</label>
+                    <input type="number" name="gtTwo" id="igttwo" placeholder="Preço por unidade" oninput="iprecogtTwo.innerHTML = Number(igttwo.value)*2+15000">
+                    <label for="iprecogtTwo">Total:</label>
+                    <output id="iprecogtTwo" >0</output>
+                </span>
+                <span id="gt-quatro"class="invisivel">
+                    <label for="gtFour">Preço Gold token?</label>
+                    <input type="number" name="gtFour" id="igtfour" placeholder="Preço por unidade" oninput="iprecogtFour.innerHTML = Number(igtfour.value)*4+55000">
+                    <label for="iprecogtFour">Total:</label>
+                    <output id="iprecogtFour">0</output>
+                </span>
+                <span id="gt-seis"class="invisivel">
+                    <label for="gtSix">Preço Gold token?</label>
+                    <input type="number" name="gtSix" id="igtsix" placeholder="Preço por unidade" oninput="iprecogtSix.innerHTML = Number(igtsix.value)*6+150000">
+                    <label for="iprecogtSix">Total:</label>
+                    <output id="iprecogtSix">0</output>
+                </span>
+            </span>
+        </span>    
     </div>
 </main>
 <script src="scripts/visibilidade.js"></script>
@@ -497,5 +801,14 @@
 <script src="scripts/magic-skil.js"></script>
 <script src="scripts/distancia-skil.js"></script>
 <script src="scripts/escudo-skil.js"></script>
+<script src="scripts/res-death.js"></script>
+<script src="scripts/res-fire.js"></script>
+<script src="scripts/res-earth.js"></script>
+<script src="scripts/res-ice.js"></script>
+<script src="scripts/res-energy.js"></script>
+<script src="scripts/res-holy.js"></script>
+<script src="scripts/death.js"></script>
+<script src="scripts/fire.js"></script>
+<script src="scripts/earth.js"></script>
 </body>
 </html>

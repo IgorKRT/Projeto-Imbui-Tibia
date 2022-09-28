@@ -37,7 +37,7 @@ cajadoInput.addEventListener('input', function(event){
 var tierImbui = document.querySelector("#imbui-mana-leech");
 tierImbui.addEventListener('input', function(event){
     event.preventDefault;
-    document.querySelector("#totvalor").innerHTML ="";
+    document.querySelector("#totmana").innerHTML ="";
     var checkTier = document.querySelector("#i-tier-mana").value;
     var btn = document.querySelector("#botoes");
     btn.classList.remove("invisivel");
@@ -82,12 +82,12 @@ tierImbui.addEventListener('input', function(event){
         disablegtgeral.classList.add("invisivel");
    }
 })
-var botaoCacl = document.querySelector("#btn-total");
+var botaoCacl = document.querySelector("#btn-mana");
 botaoCacl.addEventListener('click', function(event){
    event.preventDefault();
    var checkTier = document.querySelector("#i-tier-mana").value;
    var res = tierImbuimenteMana(checkTier);
-   document.querySelector("#totvalor").innerHTML = res;
+   document.querySelector("#totmana").innerHTML = res;
 })
 function tierImbuimenteMana(tier){
     var nvOne = document.querySelector("#irope").value;

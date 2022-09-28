@@ -19,7 +19,7 @@ capaceteInput.addEventListener('input', function(){
 var tierImbui = document.querySelector("#imbui-skil-axe");
 tierImbui.addEventListener('input', function(event){
     event.preventDefault;
-    document.querySelector("#totvalor").innerHTML ="";
+    document.querySelector("#totaxe").innerHTML ="";
     var checkTier = document.querySelector("#i-tier-skilaxe").value;
     var btn = document.querySelector("#botoes");
     btn.classList.remove("invisivel");
@@ -64,12 +64,12 @@ tierImbui.addEventListener('input', function(event){
         disablegtgeral.classList.add("invisivel");
    }
 })
-var botaoCacl = document.querySelector("#btn-total");
+var botaoCacl = document.querySelector("#btn-axe");
 botaoCacl.addEventListener('click', function(event){
    event.preventDefault();
    var checkTier = document.querySelector("#i-tier-skilaxe").value;
    var res = tierImbuimenteAxe(checkTier);
-   document.querySelector("#totvalor").innerHTML = res;
+   document.querySelector("#totaxe").innerHTML = res;
 })
 function tierImbuimenteAxe(tier){
     var nvOne = document.querySelector("#iorc").value;

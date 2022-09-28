@@ -18,7 +18,7 @@ escudoInput.addEventListener('input', function(){
 var tierImbui = document.querySelector("#imbui-skil-escudo");
 tierImbui.addEventListener('input', function(event){
     event.preventDefault;
-    document.querySelector("#totvalor").innerHTML ="";
+    document.querySelector("#totescudo").innerHTML ="";
     var checkTier = document.querySelector("#i-tier-skilescudo").value;
     var btn = document.querySelector("#botoes");
     btn.classList.remove("invisivel");
@@ -63,12 +63,12 @@ tierImbui.addEventListener('input', function(event){
         disablegtgeral.classList.add("invisivel");
    }
 })
-var botaoCacl = document.querySelector("#btn-total");
+var botaoCacl = document.querySelector("#btn-escudo");
 botaoCacl.addEventListener('click', function(event){
    event.preventDefault();
    var checkTier = document.querySelector("#i-tier-skilescudo").value;
    var res = tierImbuimenteEscudo(checkTier);
-   document.querySelector("#totvalor").innerHTML = res;
+   document.querySelector("#totescudo").innerHTML = res;
 })
 function tierImbuimenteEscudo(tier){
     var nvOne = document.querySelector("#iscarab").value;

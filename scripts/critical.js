@@ -28,7 +28,7 @@ cajadoInput.addEventListener('input', function(event){
 var tierImbui = document.querySelector("#imbui-critical");
 tierImbui.addEventListener('input', function(event){
     event.preventDefault;
-    document.querySelector("#totvalor").innerHTML ="";
+    document.querySelector("#totcritical").innerHTML ="";
     var checkTier = document.querySelector("#i-tier-critical").value;
     var btn = document.querySelector("#botoes");
     btn.classList.remove("invisivel");
@@ -73,12 +73,12 @@ tierImbui.addEventListener('input', function(event){
         disablegtgeral.classList.add("invisivel");
    }
 })
-var botaoCacl = document.querySelector("#btn-total");
+var botaoCacl = document.querySelector("#btn-critical");
 botaoCacl.addEventListener('click', function(event){
    event.preventDefault();
    var checkTier = document.querySelector("#i-tier-critical").value;
    var res = tierImbuimenteCritical(checkTier);
-   document.querySelector("#totvalor").innerHTML = res;
+   document.querySelector("#totcritical").innerHTML = res;
 })
 function tierImbuimenteCritical(tier){
     var nvOne = document.querySelector("#icharm").value;
