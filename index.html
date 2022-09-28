@@ -53,7 +53,7 @@
                             <option value="Dano Earth"></option>
                             <option value="Dano Energy"></option>
                             <option value="Dano Fire"></option>
-                            <option value="Dan Ice"></option>
+                            <option value="Dano Ice"></option>
                         </datalist>
                     </span>
 
@@ -96,9 +96,9 @@
                         </datalist>
                     </span>
 
-                    <span id="imbui-bota" class="invisivel">
-                        <label for="bota">Imbuiments Bota:</label>
-                        <input type="text" name="bota" id="i-bota" list="botas">
+                    <span id="imbui-botas" class="invisivel">
+                        <label for="botas">Imbuiments Bota:</label>
+                        <input type="text" name="botas" id="i-botas" list="botas">
                         <datalist id="botas">
                             <option value="Remoção de Paralise"></option>
                         </datalist>
@@ -119,7 +119,7 @@
                     </span>
 
                     <span id="imbui-escudo" class="invisivel">
-                        <label for="escudo">Imbuiments Armadura</label>
+                        <label for="escudo">Imbuiments Escudo</label>
                         <input type="text" name="escudo" id="i-escudo" list="escudos">
                         <datalist id="escudos">
                             <option value="Skil Shielding"></option>
@@ -133,7 +133,7 @@
                     </span>
 
                     <span id="imbui-backpack" class="invisivel">
-                        <label for="backpack">Imbuiments Bota:</label>
+                        <label for="backpack">Imbuiments Mochila:</label>
                         <input type="text" name="backpack" id="i-backpack" list="backpacks">
                         <datalist id="backpacks">
                             <option value="Aumento de Capacidade"></option>
@@ -151,14 +151,14 @@
                         </datalist>                            
                         <span id="vn1" class="invisivel">
                             <br>
-                            <label for="vampire">Vampire teech:</label>
+                            <label for="vampire">Vampire teech: (quant.25)</label>
                             <input type="number" name="vampire" id="ivampire"placeholder="Preço por unidade" min="0" oninput="iprecovampire.innerHTML = Number(ivampire.value) * Number(25)">
                             <label for="precovampire">Preço total:</label>
                             <output name="precovampire"  id="iprecovampire">0</output>
                         </span>
                         <span id="vn2" class="invisivel">
                             <br>
-                            <label for="bloody">Bloody Pincers:</label>
+                            <label for="bloody">Bloody Pincers:  (quant.15).</label>
                             <input type="number" name="bloody" id="ibloody" placeholder="Preço por unidade" min="0" oninput="iprecobloody.innerHTML = Number(ibloody.value) * Number(15)">
                             <label for="precobloody">Preço total:</label>
                             <output name="precobloody" id="iprecobloody">0</output>
@@ -166,7 +166,7 @@
 
                         <span id="vn3" class="invisivel">
                             <br>
-                            <label for="deadbrain">Piece of Dead Brain:</label>
+                            <label for="deadbrain">Piece of Dead Brain: (quant.5)</label>
                             <input type="number" name="deadbrain" id="ideadbrain" placeholder="Preço por unidade" min="0" oninput="iprecodeadbrain.innerHTML = Number(ideadbrain.value) * Number(5)">
                             <label for="precodeadbrain">Preço total:</label>
                             <output name="precodeadbrain" id="iprecodeadbrain">0</output>
@@ -185,21 +185,21 @@
                         </datalist>
                         <span id="vn1-mana" class="invisivel">
                             <br>
-                            <label for="rope">Rope Belt:</label>
+                            <label for="rope">Rope Belt: (quant.25)</label>
                             <input type="number" name="rope" id="irope"placeholder="Preço por unidade" min="0" oninput="iprecorope.innerHTML = Number(irope.value) * Number(25)">
                             <label for="precorope">Preço total:</label>
                             <output name="precorope"  id="iprecorope">0</output>
                         </span>
                         <span id="vn2-mana" class="invisivel">
                             <br>
-                            <label for="silencer">Silencer Claw:</label>
+                            <label for="silencer">Silencer Claw: (quant.25)</label>
                             <input type="number" name="silencer" id="isilencer" placeholder="Preço por unidade" min="0" oninput="iprecosilencer.innerHTML = Number(isilencer.value) * Number(25)">
                             <label for="precosilencer">Preço total:</label>
                             <output name="precosilencer" id="iprecosilencer">0</output>
                         </span>
                         <span id="vn3-mana" class="invisivel">
                             <br>
-                            <label for="grimeleech">Some Grimeleech Wing:</label>
+                            <label for="grimeleech">Some Grimeleech Wing: (quant.5)</label>
                             <input type="number" name="grimeleech" id="igrimeleech" placeholder="Preço por unidade" min="0" oninput="iprecogrimeleech.innerHTML = Number(igrimeleech.value) * Number(5)">
                             <label for="precogrimeleech">Preço total:</label>
                             <output name="precogrimeleech" id="iprecogrimeleech">0</output>
@@ -218,21 +218,21 @@
                         </datalist>                   
                         <span id="vn1-critical" class="invisivel">
                             <br>
-                            <label for="charm">Protective Charm:</label>
+                            <label for="charm">Protective Charm: (quant.20)</label>
                             <input type="number" name="charm" id="icharm"placeholder="Preço por unidade" min="0" oninput="iprecocharm.innerHTML = Number(icharm.value) * Number(20)">
                             <label for="precocharm">Preço total:</label>
                             <output name="precocharm"  id="iprecocharm">0</output>
                         </span>
                         <span id="vn2-critical" class="invisivel">
                             <br>
-                            <label for="sabretooth">Sabretooth:</label>
+                            <label for="sabretooth">Sabretooth: (quant.25)</label>
                             <input type="number" name="sabretooth" id="isabretooth" placeholder="Preço por unidade" min="0" oninput="iprecosabretooth.innerHTML = Number(isabretooth.value) * Number(25)">
                             <label for="precosabretooth">Preço total:</label>
                             <output name="precosabretooth" id="iprecosabretooth">0</output>
                         </span>
                         <span id="vn3-critical" class="invisivel">
                             <br>
-                            <label for="vexclaw">Vexclaw Talon:</label>
+                            <label for="vexclaw">Vexclaw Talon: (quant.5)</label>
                             <input type="number" name="vexclaw" id="ivexclaw" placeholder="Preço por unidade" min="0" oninput="iprecovexclaw.innerHTML = Number(ivexclaw.value) * Number(5)">
                             <label for="precovexclaw">Preço total:</label>
                             <output name="precovexclaw" id="iprecovexclaw">0</output>
@@ -251,21 +251,21 @@
                         </datalist>                           
                         <span id="vn1-espada" class="invisivel">
                             <br>
-                            <label for="lion">Lion's Mane:</label>
+                            <label for="lion">Lion's Mane: (quant.25)</label>
                             <input type="number" name="lion" id="ilion"placeholder="Preço por unidade" min="0" oninput="iprecolion.innerHTML = Number(ilion.value) * Number(25)">
                             <label for="precolion">Preço total:</label>
                             <output name="precolion"  id="iprecolion">0</output>
                         </span>
                         <span id="vn2-espada" class="invisivel">
                             <br>
-                            <label for="mooh">Mooh'tah Shell:</label>
+                            <label for="mooh">Mooh'tah Shell: (quant.25)</label>
                             <input type="number" name="mooh" id="imooh" placeholder="Preço por unidade" min="0" oninput="iprecomooh.innerHTML = Number(imooh.value) * Number(25)">
                             <label for="precomooh">Preço total:</label>
                             <output name="precomooh" id="iprecomooh">0</output>
                         </span>
                         <span id="vn3-espada" class="invisivel">
                             <br>
-                            <label for="crystal">War Crystal:</label>
+                            <label for="crystal">War Crystal: (quant.5)</label>
                             <input type="number" name="crystal" id="icrystal" placeholder="Preço por unidade" min="0" oninput="iprecocrystal.innerHTML = Number(icrystal.value) * Number(5)">
                             <label for="precocrystal">Preço total:</label>
                             <output name="precocrystal" id="iprecocrystal">0</output>
@@ -284,21 +284,21 @@
                         </datalist>
                         <span id="vn1-clava" class="invisivel">
                             <br>
-                            <label for="toe">Cyclops Toe:</label>
+                            <label for="toe">Cyclops Toe: (quant.20)</label>
                             <input type="number" name="toe" id="itoe"placeholder="Preço por unidade" min="0" oninput="iprecotoe.innerHTML = Number(itoe.value) * Number(20)">
                             <label for="precotoe">Preço total:</label>
                             <output name="precotoe"  id="iprecotoe">0</output>
                         </span>
                         <span id="vn2-clava" class="invisivel">
                             <br>
-                            <label for="ogre">Ogre Nose Ring:</label>
+                            <label for="ogre">Ogre Nose Ring: (quant.15)</label>
                             <input type="number" name="ogre" id="iogre" placeholder="Preço por unidade" min="0" oninput="iprecoogre.innerHTML = Number(iogre.value) * Number(15)">
                             <label for="precoogre">Preço total:</label>
                             <output name="precoogre" id="iprecoogre">0</output>
                         </span>
                         <span id="vn3-clava" class="invisivel">
                             <br>
-                            <label for="warmaster">Wastermaster's Wristguards:</label>
+                            <label for="warmaster">Wastermaster's Wristguards: (quant.10)</label>
                             <input type="number" name="warmaster" id="iwarmaster" placeholder="Preço por unidade" min="0" oninput="iprecowarmaster.innerHTML = Number(iwarmaster.value) * Number(10)">
                             <label for="precowarmaster">Preço total:</label>
                             <output name="precowarmaster" id="iprecowarmaster">0</output>
@@ -317,21 +317,21 @@
                         </datalist>
                         <span id="vn1-axe" class="invisivel">
                             <br>
-                            <label for="orc">Orc Tooth:</label>
+                            <label for="orc">Orc Tooth: (quant.20)</label>
                             <input type="number" name="orc" id="iorc"placeholder="Preço por unidade" min="0" oninput="iprecoorc.innerHTML = Number(iorc.value) * Number(20)">
                             <label for="precoorc">Preço total:</label>
                             <output name="precoorc"  id="iprecoorc">0</output>
                         </span>
                         <span id="vn2-axe" class="invisivel">
                             <br>
-                            <label for="battlestone">Battle Stone:</label>
+                            <label for="battlestone">Battle Stone: (quant.25)</label>
                             <input type="number" name="battlestone" id="ibattlestone" placeholder="Preço por unidade" min="0" oninput="iprecobattlestone.innerHTML = Number(ibattlestone.value) * Number(25)">
                             <label for="precobattlestone">Preço total:</label>
                             <output name="precobattlestone" id="iprecobattlestone">0</output>
                         </span>
                         <span id="vn3-axe" class="invisivel">
                             <br>
-                            <label for="moohtant">Moohtant Horn:</label>
+                            <label for="moohtant">Moohtant Horn: (quant.20)</label>
                             <input type="number" name="moohtant" id="imoohtant" placeholder="Preço por unidade" min="0" oninput="iprecomoohtant.innerHTML = Number(imoohtant.value) * Number(20)">
                             <label for="precomoohtant">Preço total:</label>
                             <output name="precomoohtant" id="iprecomoohtant">0</output>
@@ -350,21 +350,21 @@
                         </datalist>
                         <span id="vn1-magic" class="invisivel">
                             <br>
-                            <label for="elvis">Elvish Talisman:</label>
+                            <label for="elvis">Elvish Talisman: (quant.25)</label>
                             <input type="number" name="elvis" id="ielvis"placeholder="Preço por unidade" min="0" oninput="iprecoelvis.innerHTML = Number(ielvis.value) * Number(25)">
                             <label for="precoelvis">Preço total:</label>
                             <output name="precoelvis"  id="iprecoelvis">0</output>
                         </span>
                         <span id="vn2-magic" class="invisivel">
                             <br>
-                            <label for="shamanic">Broken Shamanic Staff:</label>
+                            <label for="shamanic">Broken Shamanic Staff: (quant.15)</label>
                             <input type="number" name="shamanic" id="ishamanic" placeholder="Preço por unidade" min="0" oninput="iprecoshamanic.innerHTML = Number(ishamanic.value) * Number(15)">
                             <label for="precoshamanic">Preço total:</label>
                             <output name="precoshamanic" id="iprecoshamanic">0</output>
                         </span>
                         <span id="vn3-magic" class="invisivel">
                             <br>
-                            <label for="medusa">Strand of Medusa Hair:</label>
+                            <label for="medusa">Strand of Medusa Hair: (quant.20)</label>
                             <input type="number" name="medusa" id="imedusa" placeholder="Preço por unidade" min="0" oninput="iprecomedusa.innerHTML = Number(imedusa.value) * Number(20)">
                             <label for="precomedusa">Preço total:</label>
                             <output name="precomedusa" id="iprecomedusa">0</output>
@@ -383,21 +383,21 @@
                         </datalist>
                         <span id="vn1-distancia" class="invisivel">
                             <br>
-                            <label for="elven">Elven Scouting Glass:</label>
+                            <label for="elven">Elven Scouting Glass: (quant.25)</label>
                             <input type="number" name="elven" id="ielven"placeholder="Preço por unidade" min="0" oninput="iprecoelven.innerHTML = Number(ielven.value) * Number(25)">
                             <label for="precoelven">Preço total:</label>
                             <output name="precoelven"  id="iprecoelven">0</output>
                         </span>
                         <span id="vn2-distancia" class="invisivel">
                             <br>
-                            <label for="elvenhoof">Elven Hoof:</label>
+                            <label for="elvenhoof">Elven Hoof: (quant.20)</label>
                             <input type="number" name="elvenhoof" id="ielvenhoof" placeholder="Preço por unidade" min="0" oninput="iprecoelvenhoof.innerHTML = Number(ielvenhoof.value) * Number(20)">
                             <label for="precoelvenhoof">Preço total:</label>
                             <output name="precoelvenhoof" id="iprecoelvenhoof">0</output>
                         </span>
                         <span id="vn3-distancia" class="invisivel">
                             <br>
-                            <label for="metalspike">Metal Spike:</label>
+                            <label for="metalspike">Metal Spike: (quant.10)</label>
                             <input type="number" name="metalspike" id="imetalspike" placeholder="Preço por unidade" min="0" oninput="iprecometalspike.innerHTML = Number(imetalspike.value) * Number(10)">
                             <label for="precometalspike">Preço total:</label>
                             <output name="precometalspike" id="iprecometalspike">0</output>
@@ -416,21 +416,21 @@
                         </datalist>
                         <span id="vn1-escudo" class="invisivel">
                             <br>
-                            <label for="scarab">Piece of Scarab Shell:</label>
+                            <label for="scarab">Piece of Scarab Shell: (quant.20)</label>
                             <input type="number" name="scarab" id="iscarab"placeholder="Preço por unidade" min="0" oninput="iprecoscarab.innerHTML = Number(iscarab.value) * Number(20)">
                             <label for="precoscarab">Preço total:</label>
                             <output name="precoscarab"  id="iprecoscarab">0</output>
                         </span>
                         <span id="vn2-escudo" class="invisivel">
                             <br>
-                            <label for="brimstone">Brimstone Shell:</label>
+                            <label for="brimstone">Brimstone Shell: (quant.25)</label>
                             <input type="number" name="brimstone" id="ibrimstone" placeholder="Preço por unidade" min="0" oninput="iprecobrimstone.innerHTML = Number(ibrimstone.value) * Number(25)">
                             <label for="precobrimstone">Preço total:</label>
                             <output name="precobrimstone" id="iprecobrimstone">0</output>
                         </span>
                         <span id="vn3-escudo" class="invisivel">
                             <br>
-                            <label for="frazzle">Frazzle Skin:</label>
+                            <label for="frazzle">Frazzle Skin: (quant.25)</label>
                             <input type="number" name="frazzle" id="ifrazzle" placeholder="Preço por unidade" min="0" oninput="iprecofrazzle.innerHTML = Number(ifrazzle.value) * Number(25)">
                             <label for="precofrazzle">Preço total:</label>
                             <output name="precofrazzle" id="iprecofrazzle">0</output>
@@ -449,21 +449,21 @@
                         </datalist>
                         <span id="vn1-resdeath" class="invisivel">
                             <br>
-                            <label for="flask">Flask of Embalming Fluid:</label>
+                            <label for="flask">Flask of Embalming Fluid: (quant.25)</label>
                             <input type="number" name="flask" id="iflask"placeholder="Preço por unidade" min="0" oninput="iprecoflask.innerHTML = Number(iflask.value) * Number(25)">
                             <label for="precoflask">Preço total:</label>
                             <output name="precoflask"  id="iprecoflask">0</output>
                         </span>
                         <span id="vn2-resdeath" class="invisivel">
                             <br>
-                            <label for="gloomwolf">Gloom Wolf Fur:</label>
+                            <label for="gloomwolf">Gloom Wolf Fur: (quant.20)</label>
                             <input type="number" name="gloomwolf" id="igloomwolf" placeholder="Preço por unidade" min="0" oninput="iprecogloomwolf.innerHTML = Number(igloomwolf.value) * Number(20)">
                             <label for="precogloomwolf">Preço total:</label>
                             <output name="precogloomwolf" id="iprecogloomwolf">0</output>
                         </span>
                         <span id="vn3-resdeath" class="invisivel">
                             <br>
-                            <label for="mystical">Mystical Hourglass:</label>
+                            <label for="mystical">Mystical Hourglass: (quant.25)</label>
                             <input type="number" name="mystical" id="imystical" placeholder="Preço por unidade" min="0" oninput="iprecomystical.innerHTML = Number(imystical.value) * Number(25)">
                             <label for="precomystical">Preço total:</label>
                             <output name="precomystical" id="iprecomystical">0</output>
@@ -482,21 +482,21 @@
                         </datalist>
                         <span id="vn1-resfire" class="invisivel">
                             <br>
-                            <label for="dragonleather">Green Dragon Leather:</label>
+                            <label for="dragonleather">Green Dragon Leather: (quant.20)</label>
                             <input type="number" name="dragonleather" id="idragonleather"placeholder="Preço por unidade" min="0" oninput="iprecodragonleather.innerHTML = Number(idragonleather.value) * Number(20)">
                             <label for="precodragonleather">Preço total:</label>
                             <output name="precodragonleather"  id="iprecodragonleather">0</output>
                         </span>
                         <span id="vn2-resfire" class="invisivel">
                             <br>
-                            <label for="blazing">Blazing Bone:</label>
+                            <label for="blazing">Blazing Bone: (quant.)10</label>
                             <input type="number" name="blazing" id="iblazing" placeholder="Preço por unidade" min="0" oninput="iprecoblazing.innerHTML = Number(iblazing.value) * Number(10)">
                             <label for="precoblazing">Preço total:</label>
                             <output name="precoblazing" id="iprecoblazing">0</output>
                         </span>
                         <span id="vn3-resfire" class="invisivel">
                             <br>
-                            <label for="draken">Draken Sulphur:</label>
+                            <label for="draken">Draken Sulphur: (quant.5)</label>
                             <input type="number" name="draken" id="idraken" placeholder="Preço por unidade" min="0" oninput="iprecodraken.innerHTML = Number(idraken.value) * Number(5)">
                             <label for="precodraken">Preço total:</label>
                             <output name="precodraken" id="iprecodraken">0</output>
@@ -515,21 +515,21 @@
                         </datalist>
                         <span id="vn1-researth" class="invisivel">
                             <br>
-                            <label for="swampling">Piece of Swampling Wood:</label>
+                            <label for="swampling">Piece of Swampling Wood: (quant.25)</label>
                             <input type="number" name="swampling" id="iswampling"placeholder="Preço por unidade" min="0" oninput="iprecoswampling.innerHTML = Number(iswampling.value) * Number(25)">
                             <label for="precoswampling">Preço total:</label>
                             <output name="precoswampling"  id="iprecoswampling">0</output>
                         </span>
                         <span id="vn2-researth" class="invisivel">
                             <br>
-                            <label for="snakeskin">Snake Skin:</label>
+                            <label for="snakeskin">Snake Skin: (quant.20)</label>
                             <input type="number" name="snakeskin" id="isnakeskin" placeholder="Preço por unidade" min="0" oninput="iprecosnakeskin.innerHTML = Number(isnakeskin.value) * Number(20)">
                             <label for="precosnakeskin">Preço total:</label>
                             <output name="precosnakeskin" id="iprecosnakeskin">0</output>
                         </span>
                         <span id="vn3-researth" class="invisivel">
                             <br>
-                            <label for="brimstonef">Brimstone Fangs:</label>
+                            <label for="brimstonef">Brimstone Fangs: (quant.10)</label>
                             <input type="number" name="brimstonef" id="ibrimstonef" placeholder="Preço por unidade" min="0" oninput="iprecobrimstonef.innerHTML = Number(ibrimstonef.value) * Number(10)">
                             <label for="precobrimstonef">Preço total:</label>
                             <output name="precobrimstonef" id="iprecobrimstonef">0</output>
@@ -548,21 +548,21 @@
                         </datalist>
                         <span id="vn1-resice" class="invisivel">
                             <br>
-                            <label for="winterwolf">Winter Wolf:</label>
+                            <label for="winterwolf">Winter Wolf: (quant.25)</label>
                             <input type="number" name="winterwolf" id="iwinterwolf"placeholder="Preço por unidade" min="0" oninput="iprecowinterwolf.innerHTML = Number(iwinterwolf.value) * Number(25)">
                             <label for="precowinterwolf">Preço total:</label>
                             <output name="precowinterwolf"  id="iprecowinterwolf">0</output>
                         </span>
                         <span id="vn2-resice" class="invisivel">
                             <br>
-                            <label for="thickfur">Thick Fur:</label>
+                            <label for="thickfur">Thick Fur: (quant.15)</label>
                             <input type="number" name="thickfur" id="ithickfur" placeholder="Preço por unidade" min="0" oninput="iprecothickfur.innerHTML = Number(ithickfur.value) * Number(15)">
                             <label for="precothickfur">Preço total:</label>
                             <output name="precothickfur" id="iprecothickfur">0</output>
                         </span>
                         <span id="vn3-resice" class="invisivel">
                             <br>
-                            <label for="deeplingwarts">Deepling Warts:</label>
+                            <label for="deeplingwarts">Deepling Warts: (quant.10)</label>
                             <input type="number" name="deeplingwarts" id="ideeplingwarts" placeholder="Preço por unidade" min="0" oninput="iprecodeeplingwarts.innerHTML = Number(ideeplingwarts.value) * Number(10)">
                             <label for="precodeeplingwarts">Preço total:</label>
                             <output name="precodeeplingwarts" id="iprecodeeplingwarts">0</output>
@@ -581,21 +581,21 @@
                         </datalist>
                         <span id="vn1-resenergy" class="invisivel">
                             <br>
-                            <label for="wyvern">Wyvern Talisman:</label>
+                            <label for="wyvern">Wyvern Talisman: (quant.20)</label>
                             <input type="number" name="wyvern" id="iwyvern"placeholder="Preço por unidade" min="0" oninput="iprecowyvern.innerHTML = Number(iwyvern.value) * Number(20)">
                             <label for="precowyvern">Preço total:</label>
                             <output name="precowyvern"  id="iprecowyvern">0</output>
                         </span>
                         <span id="vn2-resenergy" class="invisivel">
                             <br>
-                            <label for="crawler">Crawler Dead Plating:</label>
+                            <label for="crawler">Crawler Dead Plating: (quant.15)</label>
                             <input type="number" name="crawler" id="icrawler" placeholder="Preço por unidade" min="0" oninput="iprecocrawler.innerHTML = Number(icrawler.value) * Number(15)">
                             <label for="precocrawler">Preço total:</label>
                             <output name="precocrawler" id="iprecocrawler">0</output>
                         </span>
                         <span id="vn3-resenergy" class="invisivel">
                             <br>
-                            <label for="wyrm">Wyrm Scale:</label>
+                            <label for="wyrm">Wyrm Scale: (quant.10)</label>
                             <input type="number" name="wyrm" id="iwyrm" placeholder="Preço por unidade" min="0" oninput="iprecowyrm.innerHTML = Number(iwyrm.value) * Number(10)">
                             <label for="precowyrm">Preço total:</label>
                             <output name="precowyrm" id="iprecowyrm">0</output>
@@ -614,21 +614,21 @@
                         </datalist>
                         <span id="vn1-resholy" class="invisivel">
                             <br>
-                            <label for="cultishrobe">Cultih Robe:</label>
+                            <label for="cultishrobe">Cultih Robe: (quant.25)</label>
                             <input type="number" name="cultishrobe" id="icultishrobe"placeholder="Preço por unidade" min="0" oninput="iprecocultishrobe.innerHTML = Number(icultishrobe.value) * Number(25)">
                             <label for="precocultishrobe">Preço total:</label>
                             <output name="precocultishrobe"  id="iprecocultishrobe">0</output>
                         </span>
                         <span id="vn2-resholy" class="invisivel">
                             <br>
-                            <label for="cultishmask">Cultish Mask:</label>
+                            <label for="cultishmask">Cultish Mask: (quant.25)</label>
                             <input type="number" name="cultishmask" id="icultishmask" placeholder="Preço por unidade" min="0" oninput="iprecocultishmask.innerHTML = Number(icultishmask.value) * Number(25)">
                             <label for="precocultishmask">Preço total:</label>
                             <output name="precocultishmask" id="iprecocultishmask">0</output>
                         </span>
                         <span id="vn3-resholy" class="invisivel">
                             <br>
-                            <label for="hellspawn">Wyrm Scale:</label>
+                            <label for="hellspawn">Wyrm Scale: (quant.20)</label>
                             <input type="number" name="hellspawn" id="ihellspawn" placeholder="Preço por unidade" min="0" oninput="iprecohellspawn.innerHTML = Number(ihellspawn.value) * Number(20)">
                             <label for="precohellspawn">Preço total:</label>
                             <output name="precohellspawn" id="iprecohellspawn">0</output>
@@ -647,21 +647,21 @@
                         </datalist>
                         <span id="vn1-death" class="invisivel">
                             <br>
-                            <label for="graveearth">Pile of Grave Earth:</label>
+                            <label for="graveearth">Pile of Grave Earth: (quant.25)</label>
                             <input type="number" name="graveearth" id="igraveearth"placeholder="Preço por unidade" min="0" oninput="iprecograveearth.innerHTML = Number(igraveearth.value) * Number(25)">
                             <label for="precograveearth">Preço total:</label>
                             <output name="precograveearth"  id="iprecograveearth">0</output>
                         </span>
                         <span id="vn2-death" class="invisivel">
                             <br>
-                            <label for="demonic">Demonic Skeletal:</label>
+                            <label for="demonic">Demonic Skeletal: (quant.20)</label>
                             <input type="number" name="demonic" id="idemonic" placeholder="Preço por unidade" min="0" oninput="iprecodemonic.innerHTML = Number(idemonic.value) * Number(20)">
                             <label for="precodemonic">Preço total:</label>
                             <output name="precodemonic" id="iprecodemonic">0</output>
                         </span>
                         <span id="vn3-death" class="invisivel">
                             <br>
-                            <label for="petrified">Petrified Scream:</label>
+                            <label for="petrified">Petrified Scream: (quant.5)</label>
                             <input type="number" name="petrified" id="ipetrified" placeholder="Preço por unidade" min="0" oninput="iprecopetrified.innerHTML = Number(ipetrified.value) * Number(5)">
                             <label for="precopetrified">Preço total:</label>
                             <output name="precopetrified" id="iprecopetrified">0</output>
@@ -680,21 +680,21 @@
                         </datalist>
                         <span id="vn1-fire" class="invisivel">
                             <br>
-                            <label for="fiery">Fiery Heart:</label>
+                            <label for="fiery">Fiery Heart: (quant.25)</label>
                             <input type="number" name="fiery" id="ifiery"placeholder="Preço por unidade" min="0" oninput="iprecofiery.innerHTML = Number(ifiery.value) * Number(25)">
                             <label for="precofiery">Preço total:</label>
                             <output name="precofiery"  id="iprecofiery">0</output>
                         </span>
                         <span id="vn2-fire" class="invisivel">
                             <br>
-                            <label for="greendragonscale">Demonic Skeletal:</label>
+                            <label for="greendragonscale">Green Dragon Scale: (quant.5)</label>
                             <input type="number" name="greendragonscale" id="igreendragonscale" placeholder="Preço por unidade" min="0" oninput="iprecogreendragonscale.innerHTML = Number(igreendragonscale.value) * Number(5)">
                             <label for="precogreendragonscale">Preço total:</label>
                             <output name="precogreendragonscale" id="iprecogreendragonscale">0</output>
                         </span>
                         <span id="vn3-fire" class="invisivel">
                             <br>
-                            <label for="demonhorn">Petrified Scream:</label>
+                            <label for="demonhorn">Demon Horn: (quant.5)</label>
                             <input type="number" name="demonhorn" id="idemonhorn" placeholder="Preço por unidade" min="0" oninput="iprecodemonhorn.innerHTML = Number(idemonhorn.value) * Number(5)">
                             <label for="precodemonhorn">Preço total:</label>
                             <output name="precodemonhorn" id="iprecodemonhorn">0</output>
@@ -713,21 +713,21 @@
                         </datalist>
                         <span id="vn1-earth" class="invisivel">
                             <br>
-                            <label for="swampgrass">Swamp Grass:</label>
+                            <label for="swampgrass">Swamp Grass: (quant.25)</label>
                             <input type="number" name="swampgrass" id="iswampgrass"placeholder="Preço por unidade" min="0" oninput="iprecoswampgrass.innerHTML = Number(iswampgrass.value) * Number(25)">
                             <label for="precoswampgrass">Preço total:</label>
                             <output name="precoswampgrass"  id="iprecoswampgrass">0</output>
                         </span>
                         <span id="vn2-earth" class="invisivel">
                             <br>
-                            <label for="poisonousslime">Poisonous Slime:</label>
+                            <label for="poisonousslime">Poisonous Slime: (quant.20)</label>
                             <input type="number" name="poisonousslime" id="ipoisonousslime" placeholder="Preço por unidade" min="0" oninput="iprecopoisonousslime.innerHTML = Number(ipoisonousslime.value) * Number(20)">
                             <label for="precopoisonousslime">Preço total:</label>
                             <output name="precopoisonousslime" id="iprecopoisonousslime">0</output>
                         </span>
                         <span id="vn3-earth" class="invisivel">
                             <br>
-                            <label for="slimeheart">Slime Heart:</label>
+                            <label for="slimeheart">Slime Heart: (quant.5)</label>
                             <input type="number" name="slimeheart" id="islimeheart" placeholder="Preço por unidade" min="0" oninput="iprecoslimeheart.innerHTML = Number(islimeheart.value) * Number(5)">
                             <label for="precoslimeheart">Preço total:</label>
                             <output name="precoslimeheart" id="iprecoslimeheart">0</output>
@@ -736,31 +736,136 @@
                             <button id="btn-earth">Valor final: <p id="totearth"></p></button>
                     </span> 
 
+                    <span id="imbui-energy" class="invisivel">
+                        <label for="tier-energy">Tier de Imbui:</label>
+                        <input type="text" name="tier-energy" id="i-tier-energy" list="tierskilenergy">
+                        <datalist id="tierskilenergy">
+                            <option value="Basic">Converte 10% de dano físico em dano de Energy.</option>
+                            <option value="Intricate">Converte 25% de dano físico em dano de Energy.</option>
+                            <option value="Powerful">Converte 50% de dano físico em dano de Energy.</option>
+                        </datalist>
+                        <span id="vn1-energy" class="invisivel">
+                            <br>
+                            <label for="rorcfeather">Rorc Feather: (quant.25)</label>
+                            <input type="number" name="rorcfeather" id="irorcfeather"placeholder="Preço por unidade" min="0" oninput="iprecororcfeather.innerHTML = Number(irorcfeather.value) * Number(25)">
+                            <label for="precororcfeather">Preço total:</label>
+                            <output name="precororcfeather"  id="iprecororcfeather">0</output>
+                        </span>
+                        <span id="vn2-energy" class="invisivel">
+                            <br>
+                            <label for="peacock">Peacock Feather Fan: (quant.5)</label>
+                            <input type="number" name="peacock" id="ipeacock" placeholder="Preço por unidade" min="0" oninput="iprecopeacock.innerHTML = Number(ipeacock.value) * Number(5)">
+                            <label for="precopeacock">Preço total:</label>
+                            <output name="precopeacock" id="iprecopeacock">0</output>
+                        </span>
+                        <span id="vn3-energy" class="invisivel">
+                            <br>
+                            <label for="energyvein">Energy Vein: (quant.1)</label>
+                            <input type="number" name="energyvein" id="ienergyvein" placeholder="Preço por unidade" min="0" oninput="iprecoenergyvein.innerHTML = Number(ienergyvein.value) * Number(1)">
+                            <label for="precoenergyvein">Preço total:</label>
+                            <output name="precoenergyvein" id="iprecoenergyvein">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-energy">Valor final: <p id="totenergy"></p></button>
+                    </span> 
 
+                    <span id="imbui-ice" class="invisivel">
+                        <label for="tier-ice">Tier de Imbui:</label>
+                        <input type="text" name="tier-ice" id="i-tier-ice" list="tierskilice">
+                        <datalist id="tierskilice">
+                            <option value="Basic">Converte 10% de dano físico em dano de Ice.</option>
+                            <option value="Intricate">Converte 25% de dano físico em dano de Ice.</option>
+                            <option value="Powerful">Converte 50% de dano físico em dano de Ice.</option>
+                        </datalist>
+                        <span id="vn1-ice" class="invisivel">
+                            <br>
+                            <label for="frostyheart">Frosty Heart: (quant.25)</label>
+                            <input type="number" name="frostyheart" id="ifrostyheart"placeholder="Preço por unidade" min="0" oninput="iprecofrostyheart.innerHTML = Number(ifrostyheart.value) * Number(25)">
+                            <label for="precofrostyheart">Preço total:</label>
+                            <output name="precofrostyheart"  id="iprecofrostyheart">0</output>
+                        </span>
+                        <span id="vn2-ice" class="invisivel">
+                            <br>
+                            <label for="seacrest">Seacrest Hair: (quant.10)</label>
+                            <input type="number" name="seacrest" id="iseacrest" placeholder="Preço por unidade" min="0" oninput="iprecoseacrest.innerHTML = Number(iseacrest.value) * Number(10)">
+                            <label for="precoseacrest">Preço total:</label>
+                            <output name="precoseacrest" id="iprecoseacrest">0</output>
+                        </span>
+                        <span id="vn3-ice" class="invisivel">
+                            <br>
+                            <label for="polarbear">Polar Bear Paw: (quant.5)</label>
+                            <input type="number" name="polarbear" id="ipolarbear" placeholder="Preço por unidade" min="0" oninput="iprecopolarbear.innerHTML = Number(ipolarbear.value) * Number(5)">
+                            <label for="precopolarbear">Preço total:</label>
+                            <output name="precopolarbear" id="iprecopolarbear">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-ice">Valor final: <p id="totice"></p></button>
+                    </span> 
+                    <span id="imbui-cap" class="invisivel">
+                        <label for="tier-cap">Tier de Imbui:</label>
+                        <input type="text" name="tier-cap" id="i-tier-cap" list="tierskilcap">
+                        <datalist id="tierskilcap">
+                            <option value="Basic">Aumenta sua capacidade em 3%.</option>
+                            <option value="Intricate">Aumenta sua capacidade em 8%.</option>
+                            <option value="Powerful">Aumenta sua capacidade em 15%.</option>
+                        </datalist>
+                        <span id="vn1-cap" class="invisivel">
+                            <br>
+                            <label for="fairywing">Fairy Wings: (quant.20)</label>
+                            <input type="number" name="fairywing" id="ifairywing"placeholder="Preço por unidade" min="0" oninput="iprecofairywing.innerHTML = Number(ifairywing.value) * Number(20)">
+                            <label for="precofairywing">Preço total:</label>
+                            <output name="precofairywing"  id="iprecofairywing">0</output>
+                        </span>
+                        <span id="vn2-cap" class="invisivel">
+                            <br>
+                            <label for="bowl">Littke Bowl of Myrrh: (quant.10)</label>
+                            <input type="number" name="bowl" id="ibowl" placeholder="Preço por unidade" min="0" oninput="iprecobowl.innerHTML = Number(ibowl.value) * Number(10)">
+                            <label for="precobowl">Preço total:</label>
+                            <output name="precobowl" id="iprecobowl">0</output>
+                        </span>
+                        <span id="vn3-cap" class="invisivel">
+                            <br>
+                            <label for="goosebump">Goosebump Leather: (quant.5)</label>
+                            <input type="number" name="goosebump" id="igoosebump" placeholder="Preço por unidade" min="0" oninput="iprecogoosebump.innerHTML = Number(igoosebump.value) * Number(5)">
+                            <label for="precogoosebump">Preço total:</label>
+                            <output name="precogoosebump" id="iprecogoosebump">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-cap">Valor final: <p id="totcap"></p></button>
+                    </span> 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <span id="imbui-bota" class="invisivel">
+                        <label for="tier-bota">Tier de Imbui:</label>
+                        <input type="text" name="tier-bota" id="i-tier-bota" list="tierskilbota">
+                        <datalist id="tierskilbota">
+                            <option value="Basic">Chance de remover paralisia em 15%.</option>
+                            <option value="Intricate">Chance de remover paralisia em 25%.</option>
+                            <option value="Powerful">Chance de remover paralisia em 50%.</option>
+                        </datalist>
+                        <span id="vn1-bota" class="invisivel">
+                            <br>
+                            <label for="wereboar">Rereboar Hooves: (quant.20)</label>
+                            <input type="number" name="wereboar" id="iwereboar"placeholder="Preço por unidade" min="0" oninput="iprecowereboar.innerHTML = Number(iwereboar.value) * Number(20)">
+                            <label for="precowereboar">Preço total:</label>
+                            <output name="precowereboar"  id="iprecowereboar">0</output>
+                        </span>
+                        <span id="vn2-bota" class="invisivel">
+                            <br>
+                            <label for="anger">Crystallized Anger: (quant.15)</label>
+                            <input type="number" name="anger" id="ianger" placeholder="Preço por unidade" min="0" oninput="iprecoanger.innerHTML = Number(ianger.value) * Number(15)">
+                            <label for="precoanger">Preço total:</label>
+                            <output name="precoanger" id="iprecoanger">0</output>
+                        </span>
+                        <span id="vn3-bota" class="invisivel">
+                            <br>
+                            <label for="quill">Quill: (quant.5)</label>
+                            <input type="number" name="quill" id="iquill" placeholder="Preço por unidade" min="0" oninput="iprecoquill.innerHTML = Number(iquill.value) * Number(5)">
+                            <label for="precoquill">Preço total:</label>
+                            <output name="precoquill" id="iprecoquill">0</output>
+                        </span>
+                        <br>
+                            <button id="btn-bota">Valor final: <p id="totbota"></p></button>
+                    </span> 
         </form>
         <br>
         <span id="botoes" class="invisivel">
@@ -769,25 +874,27 @@
             <button id="gold">Valor em Gold Token</button>
             <span id="gold-token" class="invisivel">
                 <span id="gt-dois" class="invisivel">
-                    <label for="gtTwo">Preço Gold token?</label>
+                    <label for="gtTwo">Preço Gold token? (quant.2)</label>
                     <input type="number" name="gtTwo" id="igttwo" placeholder="Preço por unidade" oninput="iprecogtTwo.innerHTML = Number(igttwo.value)*2+15000">
                     <label for="iprecogtTwo">Total:</label>
                     <output id="iprecogtTwo" >0</output>
                 </span>
                 <span id="gt-quatro"class="invisivel">
-                    <label for="gtFour">Preço Gold token?</label>
+                    <label for="gtFour">Preço Gold token? (quant.4)</label>
                     <input type="number" name="gtFour" id="igtfour" placeholder="Preço por unidade" oninput="iprecogtFour.innerHTML = Number(igtfour.value)*4+55000">
                     <label for="iprecogtFour">Total:</label>
                     <output id="iprecogtFour">0</output>
                 </span>
                 <span id="gt-seis"class="invisivel">
-                    <label for="gtSix">Preço Gold token?</label>
+                    <label for="gtSix">Preço Gold token? (quant.6)</label>
                     <input type="number" name="gtSix" id="igtsix" placeholder="Preço por unidade" oninput="iprecogtSix.innerHTML = Number(igtsix.value)*6+150000">
-                    <label for="iprecogtSix">Total:</label>
+                    <label for="iprecogtSix">Preço em Gold Token:</label>
                     <output id="iprecogtSix">0</output>
                 </span>
             </span>
         </span>    
+        
+        <button onclick="window.location.reload()" id="refresh">Novo Imbui</button>
     </div>
 </main>
 <script src="scripts/visibilidade.js"></script>
@@ -810,5 +917,9 @@
 <script src="scripts/death.js"></script>
 <script src="scripts/fire.js"></script>
 <script src="scripts/earth.js"></script>
+<script src="scripts/energy.js"></script>
+<script src="scripts/ice.js"></script>
+<script src="scripts/cap.js"></script>
+<script src="scripts/paralise.js"></script>
 </body>
 </html>

@@ -69,4 +69,9 @@ function cadastraItem(valor){
     var selecionado = valor.value;
     return selecionado;
 }
+var btnReload = document.querySelector("#refresh");
+btnReload.addEventListener('click', function(event){
+    event.preventDefault();
+})
+    
 
