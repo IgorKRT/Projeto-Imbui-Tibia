@@ -71,6 +71,7 @@ botaoCacl.addEventListener('click', function(event){
    var res = tierImbuimenteClava(checkTier);
    document.querySelector("#totvalor").innerHTML = res;
 })
+
 function tierImbuimenteClava(tier){
     var nvOne = document.querySelector("#ilion").value;
     var nvTwo = document.querySelector("#imooh").value;

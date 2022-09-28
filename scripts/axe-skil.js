@@ -71,7 +71,7 @@ botaoCacl.addEventListener('click', function(event){
    var res = tierImbuimenteAxe(checkTier);
    document.querySelector("#totvalor").innerHTML = res;
 })
-function tierImbuimenteAxe(tier){Axe
+function tierImbuimenteAxe(tier){
     var nvOne = document.querySelector("#iorc").value;
     var nvTwo = document.querySelector("#ibattlestone").value;
     var nvTri = document.querySelector("#imoohtant").value;
