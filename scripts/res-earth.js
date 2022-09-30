@@ -3,7 +3,9 @@ escudoInput.addEventListener('input', function(){
     var escu = cadastraItem(escudoInput);
     if (escu=="Proteção a Earth"){
         var disableLi = document.querySelector("#imbui-researth");
-        disableLi.classList.remove("invisivel")
+        disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("earth");
     }
 })
 var armaduraInput = document.querySelector("#i-armadura");
@@ -13,6 +15,8 @@ armaduraInput.addEventListener('input', function(event){
     if (armadura=="Proteção a Earth"){
         var disableLi = document.querySelector("#imbui-researth");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("earth");
     }
 })
 

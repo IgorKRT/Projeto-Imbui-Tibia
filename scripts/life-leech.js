@@ -4,7 +4,9 @@ meleeInput.addEventListener('input',function(event){
     var melee = cadastraItem(meleeInput);
     if (melee=="Life Leech"){
         var disableLi = document.querySelector("#imbui-life-leech");
-        disableLi.classList.remove("invisivel")
+        disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("life");
     }
 })
 var armaduraInput = document.querySelector("#i-armadura");
@@ -14,6 +16,8 @@ armaduraInput.addEventListener('input', function(event){
     if (armadura=="Life Leech"){
         var disableLi = document.querySelector("#imbui-life-leech");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("life");
     }
 })
 var arcoInput = document.querySelector("#i-distancia");
@@ -23,6 +27,8 @@ arcoInput.addEventListener('input', function(event){
     if (arco=="Life Leech"){
         var disableLi = document.querySelector("#imbui-life-leech");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("life");
     }
 })
 

@@ -13,8 +13,8 @@ body{
 }
 main{
     position: relative;
-    width: 90vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
 
 }
 h1{
@@ -77,4 +77,26 @@ button#refresh:hover{
     color: black;
     box-shadow: 0px 0px 0px black;
 
+}
+.life{
+    background-color: red;
+    transition: 2s;
+}
+.mana{
+    background-color: rgb(0, 60, 255);
+    transition: 2s;
+
+}
+.death{
+    background-color: black;
+    transition: 2s;
+    color: red;
+}
+.earth{
+    background-color: rgb(2, 151, 10);
+    transition: 2s;
+}
+.ice{
+    background-color: #75AEDC;
+    transition: 2s;
 }

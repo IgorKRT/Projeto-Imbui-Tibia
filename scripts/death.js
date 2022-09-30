@@ -4,6 +4,8 @@ arcoInput.addEventListener('input', function(event){
     if (arco=="Dano Death"){
         var disableLi = document.querySelector("#imbui-death");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("death")
     }
 })
 var meleeInput = document.querySelector("#i-melee");
@@ -13,6 +15,8 @@ meleeInput.addEventListener('input',function(event){
     if (melee=="Dano Death"){
         var disableLi = document.querySelector("#imbui-death");
         disableLi.classList.remove("invisivel")
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("death")
     }
 })
 var tierImbui = document.querySelector("#imbui-death");

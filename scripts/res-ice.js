@@ -3,7 +3,9 @@ escudoInput.addEventListener('input', function(){
     var escu = cadastraItem(escudoInput);
     if (escu=="Proteção a Ice"){
         var disableLi = document.querySelector("#imbui-resice");
-        disableLi.classList.remove("invisivel")
+        disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("ice");
     }
 })
 var armaduraInput = document.querySelector("#i-armadura");
@@ -13,6 +15,8 @@ armaduraInput.addEventListener('input', function(event){
     if (armadura=="Proteção a Ice"){
         var disableLi = document.querySelector("#imbui-resice");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("ice");
     }
 })
 

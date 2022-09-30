@@ -5,6 +5,8 @@ meleeInput.addEventListener('input',function(event){
     if (melee=="Mana Leech"){
         var disableLi = document.querySelector("#imbui-mana-leech");
         disableLi.classList.remove("invisivel")
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("mana")
     }
 })
 var capaceteInput = document.querySelector("#i-capacete")
@@ -13,6 +15,8 @@ capaceteInput.addEventListener('input', function(){
     if (capa=="Mana Leech"){
         var disableLi = document.querySelector("#imbui-mana-leech");
         disableLi.classList.remove("invisivel")
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("mana")
     }
 })
 var arcoInput = document.querySelector("#i-distancia");
@@ -22,6 +26,8 @@ arcoInput.addEventListener('input', function(event){
     if (arco=="Mana Leech"){
         var disableLi = document.querySelector("#imbui-mana-leech");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("mana")
     }
 })
 var cajadoInput = document.querySelector("#i-cajado");
@@ -31,6 +37,8 @@ cajadoInput.addEventListener('input', function(event){
     if (cajadoT=="Mana Leech"){
         var disableLi = document.querySelector("#imbui-mana-leech");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("mana")
     }
 })
 

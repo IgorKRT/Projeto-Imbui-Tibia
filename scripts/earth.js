@@ -4,6 +4,8 @@ arcoInput.addEventListener('input', function(event){
     if (arco=="Dano Earth"){
         var disableLi = document.querySelector("#imbui-earth");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("earth");   
     }
 })
 var meleeInput = document.querySelector("#i-melee");
@@ -12,7 +14,9 @@ meleeInput.addEventListener('input',function(event){
     var melee = cadastraItem(meleeInput);
     if (melee=="Dano Earth"){
         var disableLi = document.querySelector("#imbui-earth");
-        disableLi.classList.remove("invisivel")
+        disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("earth");
     }
 })
 var tierImbui = document.querySelector("#imbui-earth");

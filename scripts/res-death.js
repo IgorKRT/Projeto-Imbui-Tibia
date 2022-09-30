@@ -4,6 +4,8 @@ escudoInput.addEventListener('input', function(){
     if (escu=="Proteção a Death"){
         var disableLi = document.querySelector("#imbui-resdeath");
         disableLi.classList.remove("invisivel")
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("death")
     }
 })
 var armaduraInput = document.querySelector("#i-armadura");
@@ -13,6 +15,8 @@ armaduraInput.addEventListener('input', function(event){
     if (armadura=="Proteção a Death"){
         var disableLi = document.querySelector("#imbui-resdeath");
         disableLi.classList.remove("invisivel");
+        var tatakae = document.querySelector("#principal");
+        tatakae.classList.add("death")
     }
 })
 
