@@ -79,7 +79,7 @@ button#refresh:hover{
 
 }
 .life{
-    background-color: red;
+    background-color: rgb(141, 0, 0);
     transition: 2s;
 }
 .mana{
